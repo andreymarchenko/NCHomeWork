@@ -27,12 +27,13 @@ public class MainClass {
         System.out.println("Summation: " + p1.add(p2));
         System.out.println("Multiplication: " + p1.multiply(p2) + "\n");
 
-        Container container = new Container(0,0,3,4);
+        Container container = new Container(0,0,3,3);
         System.out.println(container);
-        Ball ball = new Ball(2,2,1,5,5);
+        Ball ball = new Ball(2,2,1,1,0);
         System.out.println(ball);
         System.out.println("Container contains a ball?: " + container.collides(ball));
         ball.move();
+        System.out.println(ball);
         System.out.println("Container contains a ball after movement?: " + container.collides(ball));
 
     }
