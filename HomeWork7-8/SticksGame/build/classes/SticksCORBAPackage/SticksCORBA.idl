@@ -1,0 +1,10 @@
+module SticksCORBAApp
+{
+  typedef sequence<octet> SerializedObject;
+  interface SticksCORBA
+  {
+    void clientMove(in SerializedObject game);
+    SerializedObject serverMove();
+    oneway void shutdown();
+  };
+};
