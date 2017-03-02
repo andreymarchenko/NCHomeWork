@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Квадратные уравнения</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/validation.js"></script>
+    <script src="js/table.js"></script>
+    <script src="js/ajax.js"></script>
+</head>
+<body>
+<form name="form" id="form" class="form-container">
+    <div>
+        <input type="text" name="a" value="5" class="form-field"> x<sup><small>2</small></sup>  +
+        <input type="text" name="b" value="15" class="form-field"> x +
+        <input type="text" name="c" value="10" class="form-field"> <br>
+    </div>
+
+    <input type="button" onclick="if (validate()) {solveRequest()}" value="Решить" class="button"/>
+
+    <table id="table" class="table">
+        <thead>
+        <tr>
+            <th class="equation-column">Уравнение</th>
+            <th>Решения</th>
+        </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+
+</form>
+
+</body>
+</html>
