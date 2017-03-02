@@ -16,9 +16,9 @@ public class MyServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         double a, b, c;
-        a = Double.parseDouble(req.getParameter("A"));
-        b = Double.parseDouble(req.getParameter("B"));
-        c = Double.parseDouble(req.getParameter("C"));
+        a = Double.parseDouble(req.getParameter("a"));
+        b = Double.parseDouble(req.getParameter("b"));
+        c = Double.parseDouble(req.getParameter("c"));
 
         String result = "";
 
