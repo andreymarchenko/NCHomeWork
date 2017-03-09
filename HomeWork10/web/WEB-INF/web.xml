@@ -6,7 +6,7 @@
 
     <servlet>
         <servlet-name>FirstServlet</servlet-name>
-        <servlet-class>Servlets.FirstServlet</servlet-class>
+        <servlet-class>java.Servlets.FirstServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
@@ -16,7 +16,7 @@
 
     <servlet>
         <servlet-name>TimeServlet</servlet-name>
-        <servlet-class>Servlets.TimeServlet</servlet-class>
+        <servlet-class>main.Servlets.TimeServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
@@ -24,5 +24,14 @@
         <url-pattern>/TimeServlet</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>SendMailServlet</servlet-name>
+        <servlet-class>main.Servlets.SendMailServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>SendMailServlet</servlet-name>
+        <url-pattern>/SendMailServlet</url-pattern>
+    </servlet-mapping>
 
 </web-app>

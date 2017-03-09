@@ -7,6 +7,9 @@
         <element id="directory" name="classes">
           <element id="module-output" name="HomeWork10" />
         </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="javax.mail:mail:1.4" />
+        </element>
       </element>
     </root>
   </artifact>
