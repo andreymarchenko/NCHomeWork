@@ -7,11 +7,22 @@
     <servlet>
         <servlet-name>FirstServlet</servlet-name>
         <servlet-class>Servlets.FirstServlet</servlet-class>
-
     </servlet>
 
     <servlet-mapping>
         <servlet-name>FirstServlet</servlet-name>
         <url-pattern>/FirstServlet</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>TimeServlet</servlet-name>
+        <servlet-class>Servlets.TimeServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>TimeServlet</servlet-name>
+        <url-pattern>/TimeServlet</url-pattern>
+    </servlet-mapping>
+
+
 </web-app>
