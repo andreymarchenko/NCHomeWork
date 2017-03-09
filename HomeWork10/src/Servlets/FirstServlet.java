@@ -24,9 +24,10 @@ public class FirstServlet extends HttpServlet {
         } else {
             resp.getWriter().write("<h1>Login and Password are incorrect</h1>");
         }
+    }
 
-
-
-
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        doGet(req, resp);
     }
 }
