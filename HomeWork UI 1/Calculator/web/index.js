@@ -52,11 +52,6 @@ function isNumber(number) {
     return !isNaN(parseFloat(number)) && isFinite(number);
 }
 
-function deleteRow(btn) {
-    var row = btn.parentNode.parentNode;
-    row.parentNode.removeChild(row);
-}
-
 function deleteRow(row) {
     row.parentNode.removeChild(row);
 }
