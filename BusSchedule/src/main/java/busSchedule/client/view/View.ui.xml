@@ -2,8 +2,7 @@
 <ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
              xmlns:g='urn:import:com.google.gwt.user.client.ui'>
 
-    <g:HorizontalPanel>
-    <g:FlexTable ui:field="flexTable" />
+    <g:HorizontalPanel ui:field="horizontalPanel">
     </g:HorizontalPanel>
 
 </ui:UiBinder>

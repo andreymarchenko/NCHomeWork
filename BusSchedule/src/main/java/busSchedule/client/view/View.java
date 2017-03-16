@@ -1,12 +1,16 @@
 package busSchedule.client.view;
 
+import com.google.gwt.cell.client.NumberCell;
 import com.google.gwt.core.client.GWT;
-import com.google.gwt.dom.client.DivElement;
-import com.google.gwt.dom.client.Style;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
-import com.google.gwt.user.client.Window;
+import com.google.gwt.user.cellview.client.CellTable;
+import com.google.gwt.user.cellview.client.Column;
+import com.google.gwt.user.cellview.client.TextColumn;
 import com.google.gwt.user.client.ui.*;
+import busSchedule.client.entity.*;
+
+import java.util.ArrayList;
 
 public class View extends Composite {
 
@@ -16,34 +20,60 @@ public class View extends Composite {
     private static ViewUiBinder ourUiBinder = GWT.create(ViewUiBinder.class);
 
     @UiField
-    FlexTable flexTable;
+    HorizontalPanel horizontalPanel;
+
+    ArrayList<Bus> list = new ArrayList<Bus>();
+    CellTable<Bus> cellTable = new CellTable<Bus>();
 
     public void createUI() {
         initWidget(ourUiBinder.createAndBindUi(this));
-        initUI();
         initTable();
+        addData();
+        horizontalPanel.add(cellTable);
         RootPanel.get("root").add(this);
     }
 
     public void initTable() {
-        FlexTable.FlexCellFormatter cellFormatter = flexTable.getFlexCellFormatter();
-        flexTable.setCellSpacing(5);
-        flexTable.setCellPadding(3);
-        addRow(flexTable);
+        NumberCell numberCell = new NumberCell();
+        Column<Bus, Number> numberColumn = new Column<Bus, Number>(numberCell) {
+            @Override
+            public Integer getValue(Bus object) {
+                return object.getNumber();
+            }
+        };
+        cellTable.addColumn(numberColumn, "Number");
+
+        TextColumn<Bus> startColumn = new TextColumn<Bus>() {
+            @Override
+            public String getValue(Bus object) {
+                return object.getStart();
+            }
+        };
+        cellTable.addColumn(startColumn, "Start");
+
+        TextColumn<Bus> endColumn = new TextColumn<Bus>() {
+            @Override
+            public String getValue(Bus object) {
+                return object.getEnd();
+            }
+        };
+        cellTable.addColumn(endColumn, "End");
+
+        TextColumn<Bus> timeColumn = new TextColumn<Bus>() {
+            @Override
+            public String getValue(Bus object) {
+                return object.getTime();
+            }
+        };
+        cellTable.addColumn(timeColumn, "Time");
     }
 
-    private void addRow(FlexTable flexTable) {
-        int numRows = flexTable.getRowCount();
-        flexTable.getFlexCellFormatter().setRowSpan(0, 0, numRows + 1);
-    }
-
-    public void initUI() {
-        flexTable.getElement().getStyle().setBorderColor("Gray");
-        flexTable.getElement().getStyle().setBorderStyle(Style.BorderStyle.SOLID);
-        flexTable.getElement().getStyle().setWidth(700, Style.Unit.PX);
-        flexTable.getElement().getStyle().setHeight(500, Style.Unit.PX);
-        flexTable.getElement().getStyle().setPaddingLeft(150, Style.Unit.PX);
-        flexTable.getElement().getStyle().setPaddingTop(150, Style.Unit.PX);
+    public void addData() {
+        list.add(new Bus(1, "A", "B", "21.00"));
+        list.add(new Bus(2, "C", "B", "21.00"));
+        list.add(new Bus(3, "W", "T", "21.00"));
+        cellTable.setRowCount(list.size(), true);
+        cellTable.setRowData(0, list);
     }
 
 }
