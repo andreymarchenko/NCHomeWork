@@ -46,6 +46,7 @@ public class View extends Composite {
     @Inject
     public View(Controller controller) {
         this.controller = controller;
+        controller.setView(this);
     }
 
     public void createUI() {

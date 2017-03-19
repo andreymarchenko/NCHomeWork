@@ -14,12 +14,15 @@ public class Controller {
     private EventBus eventBus;
 
     @Inject
-    public Controller(View view,
-                      DataModel dataModel,
+    public Controller(DataModel dataModel,
                       EventBus eventBus) {
-        this.view = view;
         this.dataModel = dataModel;
         this.eventBus = eventBus;
+        dataModel.setController(this);
+    }
+
+    public void setView(View view) {
+        this.view = view;
     }
 
     public HandlerRegistration addRowEventHandler(final AddRowEventHandler handler) {
@@ -55,6 +58,6 @@ public class Controller {
     }
 
     public void bind() {
-
+        dataModel.bind();
     }
 }
