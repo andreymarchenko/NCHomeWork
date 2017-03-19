@@ -13,6 +13,22 @@ import java.io.File;
 
 public class BusScheduleServiceImpl extends RemoteServiceServlet implements BusScheduleService {
     // Implementation of sample interface method
+    public String addRow(String str) {
+        return "";
+    }
+
+    public String deleteRow(int number) {
+        return "";
+    }
+
+    public String pressNextPage() {
+        return "";
+    }
+
+    public String pressPreviousPage() {
+        return "";
+    }
+
     public String parse() {
         String result = "";
         try {

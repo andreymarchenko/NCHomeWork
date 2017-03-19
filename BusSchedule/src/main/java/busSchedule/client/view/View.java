@@ -12,9 +12,9 @@ import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.cellview.client.CellTable;
 import com.google.gwt.user.cellview.client.Column;
 import com.google.gwt.user.cellview.client.TextColumn;
-import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.*;
 import busSchedule.client.entity.*;
+
 import javax.inject.Inject;
 import java.util.ArrayList;
 
@@ -38,7 +38,9 @@ public class View extends Composite {
     @UiField
     Label label;
 
+
     private Controller controller;
+    private InputForm inputForm;
 
     private ArrayList<Bus> list = new ArrayList<Bus>();
     private CellTable<Bus> cellTable = new CellTable<Bus>();
@@ -97,7 +99,6 @@ public class View extends Composite {
         nextPage.addClickHandler(new ClickHandler() {
             public void onClick(ClickEvent event) {
                 controller.pressNextPage();
-                //BusScheduleService.App.getInstance().parse(new MyAsyncCallback(getLabel()));
             }
         });
         previousPage.addClickHandler(new ClickHandler() {
@@ -107,30 +108,24 @@ public class View extends Composite {
         });
         addRow.addClickHandler(new ClickHandler() {
             public void onClick(ClickEvent event) {
-                controller.addRow();
+                inputForm = new InputForm();
+                inputForm.getAddButton().addClickHandler(new ClickHandler() {
+                    public void onClick(ClickEvent event) {
+                        String str = inputForm.getNumberInput().getText() + "/" +
+                                inputForm.getDepartureInput().getText() + "/" +
+                                inputForm.getDestinationInput().getText() + "/" +
+                                inputForm.getTimeInput().getText();
+                                controller.addRow(str);
+                    }
+                });
+
             }
         });
         deleteRow.addClickHandler(new ClickHandler() {
             public void onClick(ClickEvent event) {
-                controller.deleteRow();
+                controller.deleteRow(1);
             }
         });
-    }
-
-    private static class MyAsyncCallback implements AsyncCallback<String> {
-        private Label label;
-
-        public MyAsyncCallback(Label label) {
-            this.label = label;
-        }
-
-        public void onSuccess(String result) {
-            label.setText(result);
-        }
-
-        public void onFailure(Throwable throwable) {
-
-        }
     }
 
     public Button getNextPage() {
@@ -153,6 +148,10 @@ public class View extends Composite {
 
         cellTable.setRowCount(list.size(), true);
         cellTable.setRowData(0, list);
+    }
+
+    public void update() {
+
     }
 
 }

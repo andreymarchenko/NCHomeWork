@@ -25,14 +25,6 @@ public class Controller {
         this.view = view;
     }
 
-    public HandlerRegistration addRowEventHandler(final AddRowEventHandler handler) {
-        return eventBus.addHandler(AddRowEvent.TYPE, handler);
-    }
-
-    public HandlerRegistration deleteRowEventHandler(final DeleteRowEventHandler handler) {
-        return eventBus.addHandler(DeleteRowEvent.TYPE, handler);
-    }
-
     public HandlerRegistration NextPageEventHandler(final NextPageEventHandler handler) {
         return eventBus.addHandler(NextPageEvent.TYPE, handler);
     }
@@ -41,12 +33,12 @@ public class Controller {
         return eventBus.addHandler(PreviousPageEvent.TYPE, handler);
     }
 
-    public void addRow() {
-        eventBus.fireEvent(AddRowEvent.create());
+    public void addRow(String str) {
+        dataModel.addRow(str);
     }
 
-    public void deleteRow() {
-        eventBus.fireEvent(DeleteRowEvent.create());
+    public void deleteRow(int number) {
+        dataModel.deleteRow(number);
     }
 
     public void pressNextPage() {
