@@ -2,7 +2,13 @@
 <ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
              xmlns:g='urn:import:com.google.gwt.user.client.ui'>
 
-    <g:HorizontalPanel ui:field="horizontalPanel">
-    </g:HorizontalPanel>
+    <g:VerticalPanel ui:field="mainPanel">
+        <g:FlowPanel ui:field="tablePanel"/>
+        <g:HorizontalPanel>
+            <g:Button ui:field="previousPage" text="Previous"/>
+            <g:Button ui:field="nextPage" text="Next"/>
+            <g:Label ui:field="label"/>
+        </g:HorizontalPanel>
+    </g:VerticalPanel>
 
 </ui:UiBinder>

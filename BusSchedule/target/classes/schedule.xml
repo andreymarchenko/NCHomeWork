@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+
+<class>
+    <bus number="1">
+        <departure>A</departure>
+        <destination>G</destination>
+        <time>19:00</time>
+    </bus>
+
+    <bus number="2">
+        <departure>T</departure>
+        <destination>Y</destination>
+        <time>18:10</time>
+    </bus>
+
+    <bus number="3">
+        <departure>W</departure>
+        <destination>R</destination>
+        <time>18:10</time>
+    </bus>
+
+    <bus number="4">
+        <departure>T</departure>
+        <destination>U</destination>
+        <time>15:00</time>
+    </bus>
+
+    <bus number="5">
+        <departure>H</departure>
+        <destination>P</destination>
+        <time>14:20</time>
+    </bus>
+
+    <bus number="6">
+        <departure>O</departure>
+        <destination>L</destination>
+        <time>12:10</time>
+    </bus>
+
+    <bus number="7">
+        <departure>D</departure>
+        <destination>F</destination>
+        <time>22:00</time>
+    </bus>
+
+    <bus number="8">
+        <departure>Z</departure>
+        <destination>X</destination>
+        <time>18:40</time>
+    </bus>
+
+</class>

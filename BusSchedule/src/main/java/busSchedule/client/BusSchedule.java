@@ -14,37 +14,30 @@ import com.google.gwt.event.dom.client.ClickEvent;
 public class BusSchedule implements EntryPoint {
 
     public void onModuleLoad() {
-        View view = new View();
+        final View view = new View();
         view.createUI();
-/*        final Button button = new Button("Click me");
-        final Label label = new Label();
 
-        button.addClickHandler(new ClickHandler() {
+        view.getNextPage().addClickHandler(new ClickHandler() {
             public void onClick(ClickEvent event) {
-                if (label.getText().equals("")) {
-                    BusScheduleService.App.getInstance().getMessage("Hello, World!", new MyAsyncCallback(label));
-                } else {
-                    label.setText("");
-                }
+                    BusScheduleService.App.getInstance().parse(new MyAsyncCallback(view.getBuses()));
+                    view.addData();
             }
         });
-        RootPanel.get("slot1").add(button);
-        RootPanel.get("slot2").add(label);*/
     }
 
-    /*private static class MyAsyncCallback implements AsyncCallback<String> {
-        private Label label;
+    private static class MyAsyncCallback implements AsyncCallback<String> {
+        private String[] buses;
 
-        public MyAsyncCallback(Label label) {
-            this.label = label;
+        public MyAsyncCallback(String[] buses) {
+            this.buses = buses;
         }
 
         public void onSuccess(String result) {
-            label.getElement().setInnerHTML(result);
+            this.buses = result.split("/");
         }
 
         public void onFailure(Throwable throwable) {
-            label.setText("Failed to receive answer from server!");
+
         }
-    }*/
+    }
 }

@@ -8,4 +8,13 @@
     <artifactId>BusSchedule</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <dependencies>
+    <dependency>
+        <groupId>com.github.gwtmaterialdesign</groupId>
+        <artifactId>gwt-material</artifactId>
+        <version>1.4.1</version>
+    </dependency>
+    </dependencies>
+
+
 </project>
