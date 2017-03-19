@@ -1,7 +1,7 @@
 package busSchedule.server;
 
 import com.google.gwt.user.server.rpc.RemoteServiceServlet;
-import busSchedule.client.BusScheduleService;
+import busSchedule.client.services.BusScheduleService;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -16,7 +16,7 @@ public class BusScheduleServiceImpl extends RemoteServiceServlet implements BusS
     public String parse() {
         String result = "";
         try {
-            File inputFile = new File("C:\\NCHomeWork\\BusSchedule\\src\\main\\resources\\schedule.xml");
+            File inputFile = new File("C:\\NCHomeWork\\BusScheduleEntryPoint\\src\\main\\resources\\schedule.xml");
             DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
             Document doc = dBuilder.parse(inputFile);
