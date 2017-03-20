@@ -26,9 +26,13 @@ public class InputForm extends DialogBox {
     private Button closeButton;
 
     public InputForm() {
+        setAnimationEnabled(true);
+        setGlassEnabled(true);
         createMarkup();
-        setPopupPosition(Window.getClientWidth() / 2, Window.getClientHeight() / 2);
         bind(this);
+        setPopupPosition(Window.getClientWidth() / 2, Window.getClientHeight() / 2);
+        setAnimationEnabled(true);
+        setGlassEnabled(true);
         show();
     }
 
@@ -62,6 +66,7 @@ public class InputForm extends DialogBox {
         horizontalPanel.add(rightPanel);
         mainPanel.add(horizontalPanel);
         mainPanel.add(buttonPanel);
+        this.add(mainPanel);
     }
 
     public void bind(final InputForm inputForm) {

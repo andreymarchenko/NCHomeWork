@@ -2,19 +2,61 @@ package busSchedule.server;
 
 import com.google.gwt.user.server.rpc.RemoteServiceServlet;
 import busSchedule.client.services.BusScheduleService;
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
-import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
+import org.w3c.dom.*;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamResult;
 import java.io.File;
 
 public class BusScheduleServiceImpl extends RemoteServiceServlet implements BusScheduleService {
-    // Implementation of sample interface method
+
+    private String path = "C:\\NCHomeWork\\BusScheduleEntryPoint\\src\\main\\resources\\schedule.xml";
+
     public String addRow(String str) {
-        return "";
+        return "ПРИВЕТИКИ";
+    /*    try {
+            File inputFile = new File(path);
+            DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+            DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
+            Document doc = dBuilder.parse(inputFile);
+            doc.getDocumentElement().normalize();
+
+            String bus[] = str.split("/");
+            Element rootElement = doc.createElement("class");
+            doc.appendChild(rootElement);
+
+            Element newBus = doc.createElement("bus");
+            rootElement.appendChild(newBus);
+
+            Attr attr = doc.createAttribute("number");
+            attr.setValue(bus[0]);
+            newBus.setAttributeNode(attr);
+
+            Element departure = doc.createElement("departure");
+            departure.setTextContent(bus[1]);
+            newBus.appendChild(departure);
+
+            Element destination = doc.createElement("destination");
+            destination.setTextContent(bus[2]);
+            newBus.appendChild(destination);
+
+            Element time = doc.createElement("time");
+            time.setTextContent(bus[3]);
+            newBus.appendChild(time);
+
+            TransformerFactory transformerFactory = TransformerFactory.newInstance();
+            Transformer transformer = transformerFactory.newTransformer();
+            DOMSource source = new DOMSource(doc);
+            StreamResult result = new StreamResult(new File(path));
+            transformer.transform(source, result);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return parse();*/
     }
 
     public String deleteRow(int number) {
@@ -32,7 +74,7 @@ public class BusScheduleServiceImpl extends RemoteServiceServlet implements BusS
     public String parse() {
         String result = "";
         try {
-            File inputFile = new File("C:\\NCHomeWork\\BusScheduleEntryPoint\\src\\main\\resources\\schedule.xml");
+            File inputFile = new File(path);
             DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
             Document doc = dBuilder.parse(inputFile);

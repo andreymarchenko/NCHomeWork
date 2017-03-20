@@ -6,7 +6,7 @@ import com.google.gwt.user.client.rpc.RemoteServiceRelativePath;
 
 @RemoteServiceRelativePath("BusScheduleService")
 public interface BusScheduleService extends RemoteService {
-    // Sample interface method of remote interface
+
     String parse();
     String addRow(String row);
     String deleteRow(int number);

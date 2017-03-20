@@ -25,6 +25,10 @@ public class Controller {
         this.view = view;
     }
 
+    public void setTableModel(String string) {
+        view.getLabel().setText(string);
+    }
+
     public HandlerRegistration NextPageEventHandler(final NextPageEventHandler handler) {
         return eventBus.addHandler(NextPageEvent.TYPE, handler);
     }
