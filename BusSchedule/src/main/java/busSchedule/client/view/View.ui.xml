@@ -2,7 +2,14 @@
 <ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
              xmlns:g='urn:import:com.google.gwt.user.client.ui'>
 
-    <g:VerticalPanel ui:field="mainPanel">
+    <ui:style>
+        .tablePanel {
+            alignment: center;
+            align-content: center;
+        }
+    </ui:style>
+
+    <g:VerticalPanel ui:field="mainPanel" styleName="{style.tablePanel}">
         <g:FlowPanel ui:field="tablePanel"/>
         <g:HorizontalPanel>
             <g:Button ui:field="previousPage" text="Previous"/>

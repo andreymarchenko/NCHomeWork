@@ -37,7 +37,7 @@ public class DataModel {
     }
 
     public void addRow(String str) {
-        BusScheduleService.App.getInstance().addRow(str, new MyAsyncCallback(controller));
+        BusScheduleService.App.getInstance().addRow(str, currentPageNumber, new MyAsyncCallback(controller));
     }
 
     public void deleteRow(int number) {

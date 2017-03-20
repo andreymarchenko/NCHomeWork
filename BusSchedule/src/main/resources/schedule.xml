@@ -1,6 +1,4 @@
-<?xml version="1.0"?>
-
-<class>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><class>
     <bus number="1">
         <departure>A</departure>
         <destination>G</destination>
@@ -73,4 +71,4 @@
         <time>18:40</time>
     </bus>
 
-</class>
+<bus number="13"><departure>V</departure><destination>D</destination><time>13:13</time></bus><bus number="14"><departure>A</departure><destination>E</destination><time>12:20</time></bus></class>

@@ -6,6 +6,11 @@ h1 {
     text-align: center;
 }
 
+.cellTable {
+    alignment: center;
+    text-align: center;
+}
+
 body, td, a, div, .p {
     font-family: arial, sans-serif
 }

@@ -12,7 +12,6 @@ import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.cellview.client.CellTable;
 import com.google.gwt.user.cellview.client.Column;
 import com.google.gwt.user.cellview.client.TextColumn;
-import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.*;
 import busSchedule.client.entity.*;
 
@@ -77,7 +76,7 @@ public class View extends Composite {
                 return object.getStart();
             }
         };
-        cellTable.addColumn(startColumn, "Start");
+        cellTable.addColumn(startColumn, "Departure");
 
         TextColumn<Bus> endColumn = new TextColumn<Bus>() {
             @Override
@@ -85,7 +84,7 @@ public class View extends Composite {
                 return object.getEnd();
             }
         };
-        cellTable.addColumn(endColumn, "End");
+        cellTable.addColumn(endColumn, "Destination");
 
         TextColumn<Bus> timeColumn = new TextColumn<Bus>() {
             @Override
@@ -93,7 +92,7 @@ public class View extends Composite {
                 return object.getTime();
             }
         };
-        cellTable.addColumn(timeColumn, "Time");
+        cellTable.addColumn(timeColumn, "Travel time");
     }
 
     public void initTableData() {
@@ -145,6 +144,13 @@ public class View extends Composite {
     public void setView() {
         nextPage.getElement().getStyle().setMarginLeft(30, Style.Unit.PX);
         previousPage.getElement().getStyle().setMarginLeft(70, Style.Unit.PX);
+
+        addRow.getElement().getStyle().setMarginTop(30, Style.Unit.PX);
+        addRow.getElement().getStyle().setMarginLeft(30, Style.Unit.PX);
+
+        deleteRow.getElement().getStyle().setMarginTop(30, Style.Unit.PX);
+        deleteRow.getElement().getStyle().setMarginLeft(70, Style.Unit.PX);
+
     }
 
     public void addData(String str) {

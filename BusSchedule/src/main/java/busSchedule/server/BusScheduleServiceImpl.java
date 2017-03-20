@@ -5,16 +5,21 @@ import busSchedule.client.services.BusScheduleService;
 import org.jdom2.Content;
 import org.jdom2.output.XMLOutputter;
 import org.w3c.dom.*;
+import org.xml.sax.SAXException;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerConfigurationException;
+import javax.xml.transform.TransformerException;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
+import java.io.IOException;
 import java.util.List;
 
 public class BusScheduleServiceImpl extends RemoteServiceServlet implements BusScheduleService {
@@ -34,45 +39,50 @@ public class BusScheduleServiceImpl extends RemoteServiceServlet implements BusS
         }
     }
 
-    public String addRow(String str) {
+    public String addRow(String str, int number) {
         try {
+            String bus[] = str.split("/");
             File inputFile = new File(path);
             DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
             Document doc = dBuilder.parse(inputFile);
+
             doc.getDocumentElement().normalize();
 
-            String bus[] = str.split("/");
-            Element rootElement = doc.createElement("class");
-            doc.appendChild(rootElement);
-
             Element newBus = doc.createElement("bus");
-            rootElement.appendChild(newBus);
-
-            Attr attr = doc.createAttribute("number");
-            attr.setValue(bus[0]);
-            newBus.setAttributeNode(attr);
+            newBus.setAttribute("number", String.valueOf(bus[0]));
 
             Element departure = doc.createElement("departure");
             departure.setTextContent(bus[1]);
-            newBus.appendChild(departure);
-
             Element destination = doc.createElement("destination");
             destination.setTextContent(bus[2]);
+            Element travelTime = doc.createElement("time");
+            travelTime.setTextContent(bus[3]);
+
+            newBus.appendChild(departure);
             newBus.appendChild(destination);
+            newBus.appendChild(travelTime);
 
-            Element time = doc.createElement("time");
-            time.setTextContent(bus[3]);
-            newBus.appendChild(time);
+            Element root = doc.getDocumentElement();
+            root.appendChild(newBus);
 
-            XMLOutputter out = new XMLOutputter();
-            FileWriter writer = new FileWriter(path);
-
-            out.output((List<? extends Content>) rootElement, writer);
-        } catch (Exception e) {
+            TransformerFactory transformerFactory = TransformerFactory.newInstance();
+            Transformer transformer = transformerFactory.newTransformer();
+            DOMSource source = new DOMSource(doc);
+            StreamResult result = new StreamResult(inputFile);
+            transformer.transform(source, result);
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (TransformerConfigurationException e) {
+            e.printStackTrace();
+        } catch (ParserConfigurationException e) {
+            e.printStackTrace();
+        } catch (SAXException e) {
+            e.printStackTrace();
+        } catch (TransformerException e) {
             e.printStackTrace();
         }
-        return parse();
+        return showPage(number);
     }
 
     public String deleteRow(int number) {
