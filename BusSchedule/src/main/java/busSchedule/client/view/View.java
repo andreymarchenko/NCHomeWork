@@ -54,14 +54,14 @@ public class View extends Composite {
 
     public void createUI() {
         initWidget(ourUiBinder.createAndBindUi(this));
-        initTable();
-        addData();
+        initTableStructure();
+        initTableData();
         tablePanel.add(cellTable);
         setView();
         RootPanel.get("root").add(this);
     }
 
-    public void initTable() {
+    public void initTableStructure() {
         NumberCell numberCell = new NumberCell();
         Column<Bus, Number> numberColumn = new Column<Bus, Number>(numberCell) {
             @Override
@@ -96,6 +96,10 @@ public class View extends Composite {
         cellTable.addColumn(timeColumn, "Time");
     }
 
+    public void initTableData() {
+        controller.tableLoad();
+    }
+
     public void bind() {
         nextPage.addClickHandler(new ClickHandler() {
             public void onClick(ClickEvent event) {
@@ -116,7 +120,7 @@ public class View extends Composite {
                                 inputForm.getDepartureInput().getText() + "/" +
                                 inputForm.getDestinationInput().getText() + "/" +
                                 inputForm.getTimeInput().getText();
-                                controller.addRow(str);
+                        controller.addRow(str);
                     }
                 });
 
@@ -143,12 +147,17 @@ public class View extends Composite {
         previousPage.getElement().getStyle().setMarginLeft(70, Style.Unit.PX);
     }
 
-    public void addData() {
-        list.add(new Bus(2, "C", "B", "21.00"));
-        list.add(new Bus(3, "W", "T", "21.00"));
+    public void addData(String str) {
+        list.clear();
+        String[] data = str.split("/");
+
+        for (int i = 0; i < data.length; i += 4) {
+            list.add(new Bus(Integer.parseInt(data[i]), data[i + 1], data[i + 2], data[i + 3]));
+        }
 
         cellTable.setRowCount(list.size(), true);
         cellTable.setRowData(0, list);
+        cellTable.redraw();
     }
 
     public void update() {

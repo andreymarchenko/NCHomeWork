@@ -2,6 +2,8 @@ package busSchedule.server;
 
 import com.google.gwt.user.server.rpc.RemoteServiceServlet;
 import busSchedule.client.services.BusScheduleService;
+import org.jdom2.Content;
+import org.jdom2.output.XMLOutputter;
 import org.w3c.dom.*;
 
 import javax.xml.parsers.DocumentBuilder;
@@ -11,14 +13,20 @@ import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.util.List;
 
 public class BusScheduleServiceImpl extends RemoteServiceServlet implements BusScheduleService {
 
-    private String path = "C:\\NCHomeWork\\BusScheduleEntryPoint\\src\\main\\resources\\schedule.xml";
+    private String path = "C:\\NCHomeWork\\BusSchedule\\src\\main\\resources\\schedule.xml";
+
+    public String loadTable() {
+        return showPage(1);
+    }
 
     public String addRow(String str) {
-        return "ПРИВЕТИКИ";
-    /*    try {
+        try {
             File inputFile = new File(path);
             DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
@@ -48,27 +56,51 @@ public class BusScheduleServiceImpl extends RemoteServiceServlet implements BusS
             time.setTextContent(bus[3]);
             newBus.appendChild(time);
 
-            TransformerFactory transformerFactory = TransformerFactory.newInstance();
-            Transformer transformer = transformerFactory.newTransformer();
-            DOMSource source = new DOMSource(doc);
-            StreamResult result = new StreamResult(new File(path));
-            transformer.transform(source, result);
+            XMLOutputter out = new XMLOutputter();
+            FileWriter writer = new FileWriter(path);
+
+            out.output((List<? extends Content>) rootElement, writer);
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return parse();*/
+        return parse();
     }
 
     public String deleteRow(int number) {
         return "";
     }
 
-    public String pressNextPage() {
-        return "";
+    public String pressNextPage(int number) {
+        return showPage(number);
     }
 
-    public String pressPreviousPage() {
-        return "";
+    public String pressPreviousPage(int number) {
+        return showPage(number);
+    }
+
+    public String showPage(int number) {
+        String str = parse();
+        String[] data = str.split("/");
+        String result = "";
+        if (number * 40 <= data.length) {
+            for (int i = (number - 1) * 40; i < number * 40; i++) {
+                if (i != number * 40 - 1) {
+                    result += data[i] + "/";
+                } else {
+                    result += data[i];
+                }
+            }
+        } else {
+            for (int i = (number - 1) * 40; i < data.length; i++) {
+                if (i != data.length - 1) {
+                    result += data[i] + "/";
+                } else {
+                    result += data[i];
+                }
+            }
+        }
+        return result;
+
     }
 
     public String parse() {

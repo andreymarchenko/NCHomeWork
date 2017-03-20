@@ -2,24 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b01e7f81-1df0-467f-99fd-34c0fe835944" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/busSchedule/client/view/View$1.class" afterPath="$PROJECT_DIR$/target/classes/busSchedule/client/view/View$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/busSchedule/client/view/View$2.class" afterPath="$PROJECT_DIR$/target/classes/busSchedule/client/view/View$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/busSchedule/client/view/View$3.class" afterPath="$PROJECT_DIR$/target/classes/busSchedule/client/view/View$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/busSchedule/client/view/View$4.class" afterPath="$PROJECT_DIR$/target/classes/busSchedule/client/view/View$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/busSchedule/client/view/View.class" afterPath="$PROJECT_DIR$/target/classes/busSchedule/client/view/View.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/busSchedule/server/BusScheduleServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/busSchedule/server/BusScheduleServiceImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BusSchedule.iml" afterPath="$PROJECT_DIR$/BusSchedule.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/busSchedule/client/controller/Controller.java" afterPath="$PROJECT_DIR$/src/main/java/busSchedule/client/controller/Controller.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/busSchedule/client/model/DataModel.java" afterPath="$PROJECT_DIR$/src/main/java/busSchedule/client/model/DataModel.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/busSchedule/client/services/BusScheduleService.java" afterPath="$PROJECT_DIR$/src/main/java/busSchedule/client/services/BusScheduleService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/busSchedule/client/services/BusScheduleServiceAsync.java" afterPath="$PROJECT_DIR$/src/main/java/busSchedule/client/services/BusScheduleServiceAsync.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/busSchedule/client/view/InputForm.java" afterPath="$PROJECT_DIR$/src/main/java/busSchedule/client/view/InputForm.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/busSchedule/client/view/View.java" afterPath="$PROJECT_DIR$/src/main/java/busSchedule/client/view/View.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/busSchedule/index.gwt.xml" afterPath="$PROJECT_DIR$/src/main/java/busSchedule/index.gwt.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/busSchedule/server/BusScheduleServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/busSchedule/server/BusScheduleServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HomeWork UI 1/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../HomeWork UI 1/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/schedule.xml" afterPath="$PROJECT_DIR$/src/main/resources/schedule.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -36,21 +26,27 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DataModel.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DataModel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/busSchedule/client/model/DataModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="52" column="53" lean-forward="true" selection-start-line="52" selection-start-column="53" selection-end-line="52" selection-end-column="53" />
+            <state relative-caret-position="356">
+              <caret line="68" column="9" lean-forward="true" selection-start-line="68" selection-start-column="9" selection-end-line="68" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#563#564#0" expanded="true" />
-                <element signature="e#603#604#0" expanded="true" />
-                <element signature="e#1844#1845#0" expanded="true" />
-                <element signature="e#1896#1897#0" expanded="true" />
-                <element signature="e#1944#1945#0" expanded="true" />
-                <element signature="e#2000#2001#0" expanded="true" />
-                <element signature="e#2054#2055#0" expanded="true" />
-                <element signature="e#2111#2112#0" expanded="true" />
+                <element signature="e#519#520#0" expanded="true" />
+                <element signature="e#559#560#0" expanded="true" />
+                <element signature="e#690#691#0" expanded="true" />
+                <element signature="e#785#786#0" expanded="true" />
+                <element signature="e#1241#1624#0" expanded="true" />
+                <element signature="e#1623#1624#0" expanded="true" />
+                <element signature="e#1671#2074#0" expanded="true" />
+                <element signature="e#2073#2074#0" expanded="true" />
+                <element signature="e#2254#2255#0" expanded="true" />
+                <element signature="e#2306#2307#0" expanded="true" />
+                <element signature="e#2354#2355#0" expanded="true" />
+                <element signature="e#2410#2411#0" expanded="true" />
+                <element signature="e#2464#2465#0" expanded="true" />
+                <element signature="e#2536#2537#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -69,34 +65,49 @@
       <file leaf-file-name="BusScheduleService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/busSchedule/client/services/BusScheduleService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="22" column="72" lean-forward="true" selection-start-line="22" selection-start-column="72" selection-end-line="22" selection-end-column="72" />
+            <state relative-caret-position="-80">
+              <caret line="10" column="23" lean-forward="false" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
               <folding>
-                <element signature="e#806#807#0" expanded="true" />
-                <element signature="e#848#849#0" expanded="true" />
+                <element signature="e#850#851#0" expanded="true" />
+                <element signature="e#892#893#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="View.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="View.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/busSchedule/client/view/View.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="46" column="60" lean-forward="false" selection-start-line="46" selection-start-column="60" selection-end-line="46" selection-end-column="60" />
+            <state relative-caret-position="107">
+              <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2899#2900#0" expanded="true" />
+                <element signature="e#2937#2938#0" expanded="true" />
+                <element signature="e#2998#3138#0" expanded="true" />
+                <element signature="e#3137#3138#0" expanded="true" />
+                <element signature="e#3178#3322#0" expanded="true" />
+                <element signature="e#3321#3322#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/war/WEB-INF/web.xml">
+      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/busSchedule/client/controller/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="22" lean-forward="false" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-              <folding />
+            <state relative-caret-position="158">
+              <caret line="47" column="23" lean-forward="false" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="23" />
+              <folding>
+                <element signature="e#730#731#0" expanded="true" />
+                <element signature="e#766#767#0" expanded="true" />
+                <element signature="e#1292#1293#0" expanded="true" />
+                <element signature="e#1329#1330#0" expanded="true" />
+                <element signature="e#1364#1365#0" expanded="true" />
+                <element signature="e#1422#1423#0" expanded="true" />
+                <element signature="e#1461#1462#0" expanded="true" />
+                <element signature="e#1523#1524#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -104,11 +115,41 @@
       <file leaf-file-name="BusScheduleServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/busSchedule/server/BusScheduleServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="19" column="25" lean-forward="false" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+            <state relative-caret-position="-79">
+              <caret line="25" column="5" lean-forward="false" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#820#821#0" expanded="true" />
+                <element signature="e#854#855#0" expanded="true" />
+                <element signature="method#addRow#0;class#BusScheduleServiceImpl#0" expanded="false" />
+                <element signature="e#2444#2445#0" expanded="true" />
+                <element signature="e#2483#2484#0" expanded="true" />
+                <element signature="e#2534#2535#0" expanded="true" />
+                <element signature="e#2573#2574#0" expanded="true" />
+                <element signature="method#showPage#0;class#BusScheduleServiceImpl#0" expanded="false" />
+                <element signature="method#parse#0;class#BusScheduleServiceImpl#0" expanded="false" />
+                <element signature="method#separateLine#0;class#BusScheduleServiceImpl#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="View.ui.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/busSchedule/client/view/View.ui.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="13" column="55" lean-forward="false" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="schedule.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/schedule.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="74" column="0" lean-forward="true" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -116,28 +157,8 @@
       <file leaf-file-name="RPC.java" pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/com/google/gwt/gwt-user/2.7.0/gwt-user-2.7.0.jar!/com/google/gwt/user/server/rpc/RPC.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="607" column="0" lean-forward="false" selection-start-line="607" selection-start-column="0" selection-end-line="607" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RemoteServiceServlet.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/google/gwt/gwt-user/2.7.0/gwt-user-2.7.0.jar!/com/google/gwt/user/server/rpc/RemoteServiceServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="381" column="0" lean-forward="false" selection-start-line="381" selection-start-column="0" selection-end-line="381" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BusSchedule.iml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BusSchedule.iml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="146">
+              <caret line="599" column="0" lean-forward="false" selection-start-line="599" selection-start-column="0" selection-end-line="599" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -147,7 +168,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/busSchedule/client/services/BusScheduleServiceAsync.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
-              <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+              <caret line="4" column="42" lean-forward="false" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -182,7 +203,6 @@
         <option value="$PROJECT_DIR$/src/main/java/busSchedule/client/entity/Bus.java" />
         <option value="$PROJECT_DIR$/war/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/java/busSchedule/client/ScheduleParser.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/schedule.xml" />
         <option value="$PROJECT_DIR$/src/main/java/busSchedule/client/BusScheduleService.java" />
         <option value="$PROJECT_DIR$/src/main/java/busSchedule/client/BusScheduleServiceAsync.java" />
         <option value="$PROJECT_DIR$/src/main/java/busSchedule/server/ScheduleParser.java" />
@@ -202,16 +222,17 @@
         <option value="$PROJECT_DIR$/src/main/java/busSchedule/client/events/PreviousPageEventHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/busSchedule/client/view/View.ui.xml" />
         <option value="$PROJECT_DIR$/src/main/java/busSchedule/client/events/AddRowEvent.java" />
-        <option value="$PROJECT_DIR$/src/main/java/busSchedule/client/services/BusScheduleServiceAsync.java" />
-        <option value="$PROJECT_DIR$/src/main/java/busSchedule/client/services/BusScheduleService.java" />
         <option value="$PROJECT_DIR$/src/main/java/busSchedule/client/view/InputForm.java" />
-        <option value="$PROJECT_DIR$/src/main/java/busSchedule/client/controller/Controller.java" />
         <option value="$PROJECT_DIR$/src/main/java/busSchedule/client/entity/Data.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/busSchedule/index.gwt.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/schedule.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/busSchedule/client/controller/Controller.java" />
+        <option value="$PROJECT_DIR$/src/main/java/busSchedule/client/services/BusScheduleService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/busSchedule/client/services/BusScheduleServiceAsync.java" />
         <option value="$PROJECT_DIR$/src/main/java/busSchedule/client/view/View.java" />
-        <option value="$PROJECT_DIR$/src/main/java/busSchedule/server/BusScheduleServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/busSchedule/client/model/DataModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/busSchedule/server/BusScheduleServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -1157,7 +1178,7 @@
       <workItem from="1489878698632" duration="6713000" />
       <workItem from="1489917775712" duration="2158000" />
       <workItem from="1489953628319" duration="22629000" />
-      <workItem from="1489995029115" duration="5475000" />
+      <workItem from="1489995029115" duration="12784000" />
     </task>
     <task id="LOCAL-00001" summary="Added MVC structure, added events, added DI">
       <created>1489958973824</created>
@@ -1180,11 +1201,18 @@
       <option name="project" value="LOCAL" />
       <updated>1489967080590</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Fixed bugs with Assync Callback">
+      <created>1490001454891</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1490001454891</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46581000" />
+    <option name="totallyTimeSpent" value="53890000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1201,9 +1229,9 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4068376" sideWeight="0.5695915" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20854701" sideWeight="0.602118" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15355521" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13313162" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1211,17 +1239,17 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.49394855" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42051283" sideWeight="0.48184568" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2923077" sideWeight="0.42511347" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20854701" sideWeight="0.39788198" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4068376" sideWeight="0.43040848" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34700856" sideWeight="0.40620273" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2579425" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36308622" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1243,11 +1271,12 @@
     <MESSAGE value="Added MVC structure, added events, added DI" />
     <MESSAGE value="Fixed bugs with DI" />
     <MESSAGE value="Added some logic" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added some logic" />
+    <MESSAGE value="Fixed bugs with Assync Callback" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed bugs with Assync Callback" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="6" />
+      <option name="time" value="13" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1262,6 +1291,12 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2899#2900#0" expanded="true" />
+            <element signature="e#2937#2938#0" expanded="true" />
+            <element signature="e#2998#3138#0" expanded="true" />
+            <element signature="e#3137#3138#0" expanded="true" />
+            <element signature="e#3178#3322#0" expanded="true" />
+            <element signature="e#3321#3322#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1287,8 +1322,8 @@
         <state relative-caret-position="153">
           <caret line="11" column="7" lean-forward="false" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
           <folding>
-            <element signature="e#806#807#0" expanded="true" />
-            <element signature="e#848#849#0" expanded="true" />
+            <element signature="e#850#851#0" expanded="true" />
+            <element signature="e#892#893#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1315,6 +1350,12 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2899#2900#0" expanded="true" />
+            <element signature="e#2937#2938#0" expanded="true" />
+            <element signature="e#2998#3138#0" expanded="true" />
+            <element signature="e#3137#3138#0" expanded="true" />
+            <element signature="e#3178#3322#0" expanded="true" />
+            <element signature="e#3321#3322#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1340,8 +1381,8 @@
         <state relative-caret-position="153">
           <caret line="11" column="7" lean-forward="false" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
           <folding>
-            <element signature="e#806#807#0" expanded="true" />
-            <element signature="e#848#849#0" expanded="true" />
+            <element signature="e#850#851#0" expanded="true" />
+            <element signature="e#892#893#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1368,6 +1409,12 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2899#2900#0" expanded="true" />
+            <element signature="e#2937#2938#0" expanded="true" />
+            <element signature="e#2998#3138#0" expanded="true" />
+            <element signature="e#3137#3138#0" expanded="true" />
+            <element signature="e#3178#3322#0" expanded="true" />
+            <element signature="e#3321#3322#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1393,8 +1440,8 @@
         <state relative-caret-position="153">
           <caret line="11" column="7" lean-forward="false" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
           <folding>
-            <element signature="e#806#807#0" expanded="true" />
-            <element signature="e#848#849#0" expanded="true" />
+            <element signature="e#850#851#0" expanded="true" />
+            <element signature="e#892#893#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1504,26 +1551,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/schedule.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/busSchedule/client/controller/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="27" column="16" lean-forward="false" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#730#731#0" expanded="false" />
-            <element signature="e#777#778#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/busSchedule/client/controller/LifeCycle.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -1580,22 +1607,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/busSchedule/client/view/View.ui.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="55" lean-forward="false" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/busSchedule/index.gwt.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="47" lean-forward="false" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/war/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -1608,14 +1619,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/google/gwt/gwt-user/2.7.0/gwt-user-2.7.0.jar!/com/google/gwt/user/server/rpc/RPC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="607" column="0" lean-forward="false" selection-start-line="607" selection-start-column="0" selection-end-line="607" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1636,59 +1639,130 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/busSchedule/client/services/BusScheduleServiceAsync.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/busSchedule/client/controller/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/busSchedule/client/view/View.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="46" column="60" lean-forward="false" selection-start-line="46" selection-start-column="60" selection-end-line="46" selection-end-column="60" />
+        <state relative-caret-position="158">
+          <caret line="47" column="23" lean-forward="false" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="23" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#730#731#0" expanded="true" />
+            <element signature="e#766#767#0" expanded="true" />
+            <element signature="e#1292#1293#0" expanded="true" />
+            <element signature="e#1329#1330#0" expanded="true" />
+            <element signature="e#1364#1365#0" expanded="true" />
+            <element signature="e#1422#1423#0" expanded="true" />
+            <element signature="e#1461#1462#0" expanded="true" />
+            <element signature="e#1523#1524#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/busSchedule/client/services/BusScheduleService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="22" column="72" lean-forward="true" selection-start-line="22" selection-start-column="72" selection-end-line="22" selection-end-column="72" />
+        <state relative-caret-position="-80">
+          <caret line="10" column="23" lean-forward="false" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
           <folding>
-            <element signature="e#806#807#0" expanded="true" />
-            <element signature="e#848#849#0" expanded="true" />
+            <element signature="e#850#851#0" expanded="true" />
+            <element signature="e#892#893#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/busSchedule/client/services/BusScheduleServiceAsync.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="42" lean-forward="false" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/busSchedule/client/view/View.ui.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="13" column="55" lean-forward="false" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/busSchedule/index.gwt.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="47" lean-forward="false" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/schedule.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="74" column="0" lean-forward="true" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/gwt/gwt-user/2.7.0/gwt-user-2.7.0.jar!/com/google/gwt/user/server/rpc/RPC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="599" column="0" lean-forward="false" selection-start-line="599" selection-start-column="0" selection-end-line="599" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/busSchedule/client/model/DataModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="68" column="9" lean-forward="true" selection-start-line="68" selection-start-column="9" selection-end-line="68" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#519#520#0" expanded="true" />
+            <element signature="e#559#560#0" expanded="true" />
+            <element signature="e#690#691#0" expanded="true" />
+            <element signature="e#785#786#0" expanded="true" />
+            <element signature="e#1241#1624#0" expanded="true" />
+            <element signature="e#1623#1624#0" expanded="true" />
+            <element signature="e#1671#2074#0" expanded="true" />
+            <element signature="e#2073#2074#0" expanded="true" />
+            <element signature="e#2254#2255#0" expanded="true" />
+            <element signature="e#2306#2307#0" expanded="true" />
+            <element signature="e#2354#2355#0" expanded="true" />
+            <element signature="e#2410#2411#0" expanded="true" />
+            <element signature="e#2464#2465#0" expanded="true" />
+            <element signature="e#2536#2537#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/busSchedule/server/BusScheduleServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="19" column="25" lean-forward="false" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+        <state relative-caret-position="-79">
+          <caret line="25" column="5" lean-forward="false" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#820#821#0" expanded="true" />
+            <element signature="e#854#855#0" expanded="true" />
+            <element signature="method#addRow#0;class#BusScheduleServiceImpl#0" expanded="false" />
+            <element signature="e#2444#2445#0" expanded="true" />
+            <element signature="e#2483#2484#0" expanded="true" />
+            <element signature="e#2534#2535#0" expanded="true" />
+            <element signature="e#2573#2574#0" expanded="true" />
+            <element signature="method#showPage#0;class#BusScheduleServiceImpl#0" expanded="false" />
+            <element signature="method#parse#0;class#BusScheduleServiceImpl#0" expanded="false" />
+            <element signature="method#separateLine#0;class#BusScheduleServiceImpl#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/busSchedule/client/model/DataModel.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/busSchedule/client/view/View.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="52" column="53" lean-forward="true" selection-start-line="52" selection-start-column="53" selection-end-line="52" selection-end-column="53" />
+        <state relative-caret-position="107">
+          <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#563#564#0" expanded="true" />
-            <element signature="e#603#604#0" expanded="true" />
-            <element signature="e#1844#1845#0" expanded="true" />
-            <element signature="e#1896#1897#0" expanded="true" />
-            <element signature="e#1944#1945#0" expanded="true" />
-            <element signature="e#2000#2001#0" expanded="true" />
-            <element signature="e#2054#2055#0" expanded="true" />
-            <element signature="e#2111#2112#0" expanded="true" />
+            <element signature="e#2899#2900#0" expanded="true" />
+            <element signature="e#2937#2938#0" expanded="true" />
+            <element signature="e#2998#3138#0" expanded="true" />
+            <element signature="e#3137#3138#0" expanded="true" />
+            <element signature="e#3178#3322#0" expanded="true" />
+            <element signature="e#3321#3322#0" expanded="true" />
           </folding>
         </state>
       </provider>

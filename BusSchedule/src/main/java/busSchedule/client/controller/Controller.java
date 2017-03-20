@@ -26,7 +26,7 @@ public class Controller {
     }
 
     public void setTableModel(String string) {
-        view.getLabel().setText(string);
+        view.addData(string);
     }
 
     public HandlerRegistration NextPageEventHandler(final NextPageEventHandler handler) {
@@ -43,6 +43,10 @@ public class Controller {
 
     public void deleteRow(int number) {
         dataModel.deleteRow(number);
+    }
+
+    public void tableLoad() {
+        dataModel.loadTable();
     }
 
     public void pressNextPage() {

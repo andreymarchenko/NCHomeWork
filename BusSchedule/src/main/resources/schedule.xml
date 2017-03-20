@@ -49,4 +49,28 @@
         <time>18:40</time>
     </bus>
 
+    <bus number="9">
+        <departure>H</departure>
+        <destination>P</destination>
+        <time>14:20</time>
+    </bus>
+
+    <bus number="10">
+        <departure>O</departure>
+        <destination>L</destination>
+        <time>12:10</time>
+    </bus>
+
+    <bus number="11">
+        <departure>D</departure>
+        <destination>F</destination>
+        <time>22:00</time>
+    </bus>
+
+    <bus number="12">
+        <departure>Z</departure>
+        <destination>X</destination>
+        <time>18:40</time>
+    </bus>
+
 </class>
