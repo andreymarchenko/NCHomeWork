@@ -12,6 +12,7 @@ import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.cellview.client.CellTable;
 import com.google.gwt.user.cellview.client.Column;
 import com.google.gwt.user.cellview.client.TextColumn;
+import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.*;
 import busSchedule.client.entity.*;
 
@@ -142,14 +143,31 @@ public class View extends Composite {
 
 
     public void setView() {
-        nextPage.getElement().getStyle().setMarginLeft(30, Style.Unit.PX);
-        previousPage.getElement().getStyle().setMarginLeft(70, Style.Unit.PX);
+        nextPage.getElement().getStyle().setWidth(Window.getClientWidth() /21,  Style.Unit.PX);
+        nextPage.getElement().getStyle().setHeight(Window.getClientWidth() /25, Style.Unit.PX);
+        nextPage.getElement().getStyle().setMarginLeft(0.1 * Window.getClientWidth(), Style.Unit.PX);
+        nextPage.getElement().getStyle().setMarginTop(0.02 * Window.getClientWidth(), Style.Unit.PX);
 
-        addRow.getElement().getStyle().setMarginTop(30, Style.Unit.PX);
-        addRow.getElement().getStyle().setMarginLeft(30, Style.Unit.PX);
+        previousPage.getElement().getStyle().setWidth(Window.getClientWidth() /21, Style.Unit.PX);
+        previousPage.getElement().getStyle().setHeight(Window.getClientWidth() /25, Style.Unit.PX);
+        previousPage.getElement().getStyle().setMarginLeft(0.39 * Window.getClientWidth(), Style.Unit.PX);
+        previousPage.getElement().getStyle().setMarginTop(0.02 * Window.getClientWidth(), Style.Unit.PX);
 
-        deleteRow.getElement().getStyle().setMarginTop(30, Style.Unit.PX);
-        deleteRow.getElement().getStyle().setMarginLeft(70, Style.Unit.PX);
+        addRow.getElement().getStyle().setMarginTop(0.31 * Window.getClientHeight(), Style.Unit.PX);
+        addRow.getElement().getStyle().setMarginLeft(0.06 * Window.getClientWidth(), Style.Unit.PX);
+        addRow.getElement().getStyle().setWidth(Window.getClientWidth() /21,  Style.Unit.PX);
+        addRow.getElement().getStyle().setHeight(Window.getClientWidth() /25, Style.Unit.PX);
+
+        deleteRow.getElement().getStyle().setMarginTop(0.1 * Window.getClientHeight(), Style.Unit.PX);
+        deleteRow.getElement().getStyle().setMarginLeft(0.06 * Window.getClientWidth(), Style.Unit.PX);
+        deleteRow.getElement().getStyle().setWidth(Window.getClientWidth() /21,  Style.Unit.PX);
+        deleteRow.getElement().getStyle().setHeight(Window.getClientWidth() /25, Style.Unit.PX);
+
+        cellTable.getElement().getStyle().setWidth(Window.getClientWidth() / 1.5, Style.Unit.PX);
+        cellTable.getElement().getStyle().setHeight(Window.getClientHeight() / 1.5, Style.Unit.PX);
+
+        cellTable.getElement().getStyle().setMarginLeft(Window.getClientWidth() / 6, Style.Unit.PX);
+        cellTable.getElement().getStyle().setMarginTop(Window.getClientHeight() / 12, Style.Unit.PX);
 
     }
 
@@ -164,10 +182,6 @@ public class View extends Composite {
         cellTable.setRowCount(list.size(), true);
         cellTable.setRowData(0, list);
         cellTable.redraw();
-    }
-
-    public void update() {
-
     }
 
 }

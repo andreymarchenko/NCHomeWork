@@ -2,23 +2,19 @@
 <ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
              xmlns:g='urn:import:com.google.gwt.user.client.ui'>
 
-    <ui:style>
-        .tablePanel {
-            alignment: center;
-            align-content: center;
-        }
-    </ui:style>
 
-    <g:VerticalPanel ui:field="mainPanel" styleName="{style.tablePanel}">
-        <g:FlowPanel ui:field="tablePanel"/>
+    <g:VerticalPanel ui:field="mainPanel" >
+        <g:HorizontalPanel>
+            <g:FlowPanel ui:field="tablePanel"/>
+            <g:VerticalPanel>
+                <g:Button ui:field="addRow" text="Add"/>
+                <g:Button ui:field="deleteRow" text="Delete"/>
+            </g:VerticalPanel>
+        </g:HorizontalPanel>
         <g:HorizontalPanel>
             <g:Button ui:field="previousPage" text="Previous"/>
             <g:Button ui:field="nextPage" text="Next"/>
             <g:Label ui:field="label"/>
-        </g:HorizontalPanel>
-        <g:HorizontalPanel>
-            <g:Button ui:field="addRow" text="Add"/>
-            <g:Button ui:field="deleteRow" text="Delete"/>
         </g:HorizontalPanel>
     </g:VerticalPanel>
 
