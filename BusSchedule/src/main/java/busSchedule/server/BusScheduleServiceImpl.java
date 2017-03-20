@@ -25,6 +25,15 @@ public class BusScheduleServiceImpl extends RemoteServiceServlet implements BusS
         return showPage(1);
     }
 
+    public String getPageNumber() {
+        String str[] = parse().split("/");
+        if (str.length % 40 == 0) {
+            return Integer.toString(str.length / 40);
+        } else {
+            return Integer.toString((str.length / 40) + 1);
+        }
+    }
+
     public String addRow(String str) {
         try {
             File inputFile = new File(path);

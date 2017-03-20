@@ -8,6 +8,7 @@ import com.google.gwt.user.client.rpc.RemoteServiceRelativePath;
 public interface BusScheduleService extends RemoteService {
 
     String parse();
+    String getPageNumber();
     String loadTable();
     String addRow(String row);
     String deleteRow(int number);
