@@ -1,7 +1,7 @@
 <component name="libraryTable">
-  <library name="jdom-2.0.6">
+  <library name="aopalliance-1.0">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/src/busSchedule/jdom-2.0.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/busSchedule/aopalliance-1.0.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
