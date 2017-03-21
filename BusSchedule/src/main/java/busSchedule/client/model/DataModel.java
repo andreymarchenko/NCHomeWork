@@ -32,10 +32,6 @@ public class DataModel {
         BusScheduleService.App.getInstance().getPageNumber(new PageNumberAsyncCallback());
     }
 
-    public static void setPagesNumber(int num) {
-        pagesNumber = num;
-    }
-
     public void addRow(String str) {
         BusScheduleService.App.getInstance().addRow(str, currentPageNumber, new AddDeleteAsyncCallback(controller));
         BusScheduleService.App.getInstance().getPageNumber(new PageNumberAsyncCallback());

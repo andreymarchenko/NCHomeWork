@@ -118,11 +118,18 @@ public class View extends Composite {
                 inputForm = new InputForm();
                 inputForm.getAddButton().addClickHandler(new ClickHandler() {
                     public void onClick(ClickEvent event) {
-                        String str = inputForm.getNumberInput().getText() + "/" +
-                                inputForm.getDepartureInput().getText() + "/" +
-                                inputForm.getDestinationInput().getText() + "/" +
-                                inputForm.getTimeInput().getText();
-                        controller.addRow(str);
+                        if (inputForm.getNumberInput().getText().trim().length() != 0 &&
+                                inputForm.getDepartureInput().getText().trim().length() != 0 &&
+                                inputForm.getDestinationInput().getText().trim().length() != 0 &&
+                                inputForm.getTimeInput().getText().trim().length() != 0) {
+                            String str = inputForm.getNumberInput().getText() + "/" +
+                                    inputForm.getDepartureInput().getText() + "/" +
+                                    inputForm.getDestinationInput().getText() + "/" +
+                                    inputForm.getTimeInput().getText();
+                            controller.addRow(str);
+                        } else {
+                            Window.alert("Please fill in all fields");
+                        }
                     }
                 });
 

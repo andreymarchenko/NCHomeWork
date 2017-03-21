@@ -27,19 +27,14 @@ public class InputForm extends DialogBox {
     private Button closeButton;
 
     public InputForm() {
-        setAnimationEnabled(true);
-        setGlassEnabled(true);
         createMarkup();
         bind(this);
-        setAnimationEnabled(true);
-        setGlassEnabled(true);
+        super.setAnimationEnabled(true);
+        super.setGlassEnabled(true);
         show();
     }
 
     public void createMarkup() {
-        this.getElement().getStyle().setWidth(Window.getClientWidth() / 3, Style.Unit.PX);
-        this.getElement().getStyle().setHeight(Window.getClientWidth() / 4, Style.Unit.PX);
-        this.getElement().getStyle().setBackgroundColor("White");
         mainPanel = new VerticalPanel();
         horizontalPanel = new HorizontalPanel();
         buttonPanel = new HorizontalPanel();
@@ -49,10 +44,10 @@ public class InputForm extends DialogBox {
         departureInput = new TextArea();
         destinationInput = new TextArea();
         timeInput = new TextArea();
-        numberInfo = new Label("Enter bus number");
-        departureInfo = new Label("Enter departure place");
-        destinationInfo = new Label("Enter destination place");
-        timeInfo = new Label("Enter time");
+        numberInfo = new Label("Bus number");
+        departureInfo = new Label("Departure place");
+        destinationInfo = new Label("Destination place");
+        timeInfo = new Label("Travel time");
         addButton = new Button("Add");
         closeButton = new Button("Close");
         buttonPanel.add(addButton);
@@ -70,6 +65,8 @@ public class InputForm extends DialogBox {
         mainPanel.add(horizontalPanel);
         mainPanel.add(buttonPanel);
         this.add(mainPanel);
+        setStyle();
+
     }
 
     public void bind(final InputForm inputForm) {
@@ -85,6 +82,46 @@ public class InputForm extends DialogBox {
                 inputForm.hide();
             }
         });
+    }
+
+    public void setStyle() {
+        this.setPopupPosition((Window.getClientWidth() - 420) / 2, (Window.getClientHeight() - 420) / 2);
+        this.getElement().getStyle().setWidth(420, Style.Unit.PX);
+        this.getElement().getStyle().setHeight(320, Style.Unit.PX);
+        this.getElement().getStyle().setBackgroundColor("White");
+        this.getElement().getStyle().setBorderStyle(Style.BorderStyle.SOLID);
+        this.getElement().getStyle().setBorderWidth(1, Style.Unit.PX);
+        this.getElement().getStyle().setBorderColor("Gray");
+
+        rightPanel.getElement().getStyle().setPaddingLeft(50, Style.Unit.PX);
+
+        numberInput.getElement().getStyle().setMarginTop(20, Style.Unit.PX);
+        departureInput.getElement().getStyle().setMarginTop(30, Style.Unit.PX);
+        destinationInput.getElement().getStyle().setMarginTop(30, Style.Unit.PX);
+        timeInput.getElement().getStyle().setMarginTop(30, Style.Unit.PX);
+
+        numberInfo.getElement().getStyle().setMarginTop(25, Style.Unit.PX);
+        numberInfo.getElement().getStyle().setPaddingLeft(45, Style.Unit.PX);
+
+        departureInfo.getElement().getStyle().setMarginTop(47, Style.Unit.PX);
+        departureInfo.getElement().getStyle().setPaddingLeft(45, Style.Unit.PX);
+
+        destinationInfo.getElement().getStyle().setMarginTop(47, Style.Unit.PX);
+        destinationInfo.getElement().getStyle().setPaddingLeft(45, Style.Unit.PX);
+
+        timeInfo.getElement().getStyle().setMarginTop(47, Style.Unit.PX);
+        timeInfo.getElement().getStyle().setPaddingLeft(45, Style.Unit.PX);
+
+        buttonPanel.getElement().getStyle().setMarginTop(25, Style.Unit.PX);
+        buttonPanel.getElement().getStyle().setPaddingLeft(140, Style.Unit.PX);
+
+        addButton.getElement().getStyle().setWidth(60, Style.Unit.PX);
+        addButton.getElement().getStyle().setHeight(30, Style.Unit.PX);
+
+        closeButton.getElement().getStyle().setWidth(60, Style.Unit.PX);
+        closeButton.getElement().getStyle().setHeight(30, Style.Unit.PX);
+
+        closeButton.getElement().getStyle().setMarginLeft(20, Style.Unit.PX);
     }
 
     public Button getAddButton() {

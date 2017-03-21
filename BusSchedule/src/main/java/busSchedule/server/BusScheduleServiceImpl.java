@@ -37,6 +37,8 @@ public class BusScheduleServiceImpl extends RemoteServiceServlet implements BusS
 
     public String addRow(String str, int number) {
         String bus[] = str.split("/");
+        String string = parse();
+        String data[] = string.split("/");
 
         try {
             File inputFile = new File(path);
@@ -80,7 +82,7 @@ public class BusScheduleServiceImpl extends RemoteServiceServlet implements BusS
             e.printStackTrace();
         }
 
-        if ((bus.length % 40 == 0)) {
+        if ((data.length % 40 == 0)) {
             return showPage(number + 1) + "-" + (number + 1);
         } else {
             return showPage(number) + "-" + number;
