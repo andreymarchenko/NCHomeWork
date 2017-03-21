@@ -1,5 +1,6 @@
 package busSchedule.server;
 
+import com.google.gwt.user.client.Window;
 import com.google.gwt.user.server.rpc.RemoteServiceServlet;
 import busSchedule.client.services.BusScheduleService;
 import org.w3c.dom.*;
@@ -35,8 +36,9 @@ public class BusScheduleServiceImpl extends RemoteServiceServlet implements BusS
     }
 
     public String addRow(String str, int number) {
+        String bus[] = str.split("/");
+
         try {
-            String bus[] = str.split("/");
             File inputFile = new File(path);
             DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
@@ -77,12 +79,20 @@ public class BusScheduleServiceImpl extends RemoteServiceServlet implements BusS
         } catch (TransformerException e) {
             e.printStackTrace();
         }
-        return showPage(number);
+
+        if ((bus.length % 40 == 0)) {
+            return showPage(number + 1) + "-" + (number + 1);
+        } else {
+            return showPage(number) + "-" + number;
+        }
     }
 
     public String deleteRow(int number, int pageNumber) {
-        try {
 
+        String str = parse();
+        String[] data = str.split("/");
+
+        try {
             File inputFile = new File(path);
             DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
@@ -112,7 +122,11 @@ public class BusScheduleServiceImpl extends RemoteServiceServlet implements BusS
             e.printStackTrace();
         }
 
-        return showPage(pageNumber);
+        if ((data.length - 4) % 40 == 0 && (data.length - 4) != 0) {
+            return showPage(pageNumber - 1) + "-" + (pageNumber - 1);
+        } else {
+            return showPage(pageNumber) + "-" + pageNumber;
+        }
     }
 
     public String pressNextPage(int number) {

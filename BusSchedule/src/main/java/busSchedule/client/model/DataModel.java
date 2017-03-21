@@ -12,7 +12,7 @@ public class DataModel {
     private Controller controller;
     private EventBus eventBus;
     static int pagesNumber = 1;
-    private int currentPageNumber = 1;
+    static int currentPageNumber = 1;
 
     @Inject
     public DataModel(EventBus eventBus) {
@@ -37,11 +37,13 @@ public class DataModel {
     }
 
     public void addRow(String str) {
-        BusScheduleService.App.getInstance().addRow(str, currentPageNumber, new MyAsyncCallback(controller));
+        BusScheduleService.App.getInstance().addRow(str, currentPageNumber, new AddDeleteAsyncCallback(controller));
+        BusScheduleService.App.getInstance().getPageNumber(new PageNumberAsyncCallback());
     }
 
     public void deleteRow(int number) {
-        BusScheduleService.App.getInstance().deleteRow(number, currentPageNumber, new MyAsyncCallback(controller));
+        BusScheduleService.App.getInstance().deleteRow(number, currentPageNumber, new AddDeleteAsyncCallback(controller));
+        BusScheduleService.App.getInstance().getPageNumber(new PageNumberAsyncCallback());
     }
 
     public void bind() {
@@ -80,6 +82,26 @@ public class DataModel {
         }
     }
 
+    private static class AddDeleteAsyncCallback implements AsyncCallback<String> {
+        private Controller controller;
+
+        public AddDeleteAsyncCallback(Controller controller) {
+            this.controller = controller;
+        }
+
+        public void onSuccess(String result) {
+            String str[] = result.split("-");
+            String hh = str[0];
+            String sq = str[1];
+            controller.setTableModel(str[0]);
+            currentPageNumber = Integer.parseInt(str[1]);
+        }
+
+        public void onFailure(Throwable throwable) {
+            controller.setTableModel("-1/Error/Error/Error");
+        }
+    }
+
     private static class PageNumberAsyncCallback implements AsyncCallback<String> {
 
         public void onSuccess(String result) {
@@ -90,4 +112,5 @@ public class DataModel {
             DataModel.pagesNumber = -1;
         }
     }
+
 }

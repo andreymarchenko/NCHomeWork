@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><class>
+
     <bus number="1">
         <departure>A</departure>
         <destination>G</destination>
@@ -6,105 +7,57 @@
     </bus>
 
     <bus number="2">
-        <departure>T</departure>
-        <destination>Y</destination>
-        <time>18:10</time>
+        <departure>A</departure>
+        <destination>G</destination>
+        <time>22:00</time>
     </bus>
 
     <bus number="3">
-        <departure>W</departure>
-        <destination>R</destination>
-        <time>18:10</time>
+        <departure>A</departure>
+        <destination>G</destination>
+        <time>24:00</time>
     </bus>
 
     <bus number="4">
-        <departure>T</departure>
-        <destination>U</destination>
-        <time>15:00</time>
+        <departure>A</departure>
+        <destination>G</destination>
+        <time>24:00</time>
     </bus>
 
     <bus number="5">
-        <departure>H</departure>
-        <destination>P</destination>
-        <time>14:20</time>
+        <departure>A</departure>
+        <destination>G</destination>
+        <time>24:00</time>
     </bus>
 
     <bus number="6">
-        <departure>O</departure>
-        <destination>L</destination>
-        <time>12:10</time>
+        <departure>A</departure>
+        <destination>G</destination>
+        <time>11:00</time>
     </bus>
 
     <bus number="7">
-        <departure>D</departure>
-        <destination>F</destination>
-        <time>22:00</time>
+        <departure>A</departure>
+        <destination>G</destination>
+        <time>11:00</time>
     </bus>
 
     <bus number="8">
-        <departure>Z</departure>
-        <destination>X</destination>
-        <time>18:40</time>
+        <departure>A</departure>
+        <destination>G</destination>
+        <time>13:00</time>
     </bus>
 
     <bus number="9">
-        <departure>H</departure>
-        <destination>P</destination>
-        <time>14:20</time>
-    </bus>
-
-    
-
-    
-
-    <bus number="12">
-        <departure>Z</departure>
-        <destination>X</destination>
-        <time>18:40</time>
-    </bus>
-
-    <bus number="13">
-        <departure>V</departure>
-        <destination>D</destination>
-        <time>13:13</time>
-    </bus>
-
-    <bus number="14">
         <departure>A</departure>
-        <destination>E</destination>
-        <time>12:20</time>
+        <destination>G</destination>
+        <time>13:00</time>
     </bus>
 
-    <bus number="15">
-        <departure>D</departure>
-        <destination>F</destination>
-        <time>22:00</time>
-    </bus>
-
-    
-
-    <bus number="17">
-        <departure>V</departure>
-        <destination>D</destination>
-        <time>13:13</time>
-    </bus>
-
-    <bus number="18">
+    <bus number="10">
         <departure>A</departure>
-        <destination>E</destination>
-        <time>12:20</time>
+        <destination>G</destination>
+        <time>13:00</time>
     </bus>
 
-    <bus number="19">
-        <departure>V</departure>
-        <destination>D</destination>
-        <time>13:13</time>
-    </bus>
-
-    <bus number="20">
-        <departure>A</departure>
-        <destination>E</destination>
-        <time>12:20</time>
-    </bus>
-    
 </class>
