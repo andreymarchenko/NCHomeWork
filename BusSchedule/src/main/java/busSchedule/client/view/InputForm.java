@@ -1,5 +1,6 @@
 package busSchedule.client.view;
 
+import com.google.gwt.dom.client.Style;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.event.dom.client.KeyUpEvent;
@@ -30,13 +31,15 @@ public class InputForm extends DialogBox {
         setGlassEnabled(true);
         createMarkup();
         bind(this);
-        setPopupPosition(Window.getClientWidth() / 2, Window.getClientHeight() / 2);
         setAnimationEnabled(true);
         setGlassEnabled(true);
         show();
     }
 
     public void createMarkup() {
+        this.getElement().getStyle().setWidth(Window.getClientWidth() / 3, Style.Unit.PX);
+        this.getElement().getStyle().setHeight(Window.getClientWidth() / 4, Style.Unit.PX);
+        this.getElement().getStyle().setBackgroundColor("White");
         mainPanel = new VerticalPanel();
         horizontalPanel = new HorizontalPanel();
         buttonPanel = new HorizontalPanel();

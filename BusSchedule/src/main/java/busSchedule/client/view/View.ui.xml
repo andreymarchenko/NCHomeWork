@@ -14,7 +14,6 @@
         <g:HorizontalPanel>
             <g:Button ui:field="previousPage" text="Previous"/>
             <g:Button ui:field="nextPage" text="Next"/>
-            <g:Label ui:field="label"/>
         </g:HorizontalPanel>
     </g:VerticalPanel>
 

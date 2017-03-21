@@ -11,7 +11,7 @@ public interface BusScheduleServiceAsync {
 
     void addRow(String str, int number, AsyncCallback<String> async);
 
-    void deleteRow(int number, AsyncCallback<String> async);
+    void deleteRow(int number, int pageNumber, AsyncCallback<String> async);
 
     void pressNextPage(int number, AsyncCallback<String> async);
 

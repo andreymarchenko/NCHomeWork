@@ -2,8 +2,6 @@ package busSchedule.server;
 
 import com.google.gwt.user.server.rpc.RemoteServiceServlet;
 import busSchedule.client.services.BusScheduleService;
-import org.jdom2.Content;
-import org.jdom2.output.XMLOutputter;
 import org.w3c.dom.*;
 import org.xml.sax.SAXException;
 
@@ -17,10 +15,7 @@ import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 import java.io.File;
-import java.io.FileReader;
-import java.io.FileWriter;
 import java.io.IOException;
-import java.util.List;
 
 public class BusScheduleServiceImpl extends RemoteServiceServlet implements BusScheduleService {
 
@@ -85,8 +80,39 @@ public class BusScheduleServiceImpl extends RemoteServiceServlet implements BusS
         return showPage(number);
     }
 
-    public String deleteRow(int number) {
-        return "";
+    public String deleteRow(int number, int pageNumber) {
+        try {
+
+            File inputFile = new File(path);
+            DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+            DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
+            Document doc = dBuilder.parse(inputFile);
+
+            Node busToDelete = null;
+            NodeList buses = doc.getElementsByTagName("bus");
+
+            for (int count = 0; count < buses.getLength(); count++) {
+
+                Node currBus = buses.item(count);
+                String busNumber = currBus.getAttributes().getNamedItem("number").getNodeValue();
+
+                if (busNumber.equals(Integer.toString(number))) {
+                    busToDelete = currBus;
+                }
+            }
+
+            doc.getFirstChild().removeChild(busToDelete);
+            TransformerFactory transformerFactory = TransformerFactory.newInstance();
+            Transformer transformer = transformerFactory.newTransformer();
+            DOMSource source = new DOMSource(doc);
+            StreamResult resultFile = new StreamResult(inputFile);
+            transformer.transform(source, resultFile);
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return showPage(pageNumber);
     }
 
     public String pressNextPage(int number) {
@@ -119,7 +145,6 @@ public class BusScheduleServiceImpl extends RemoteServiceServlet implements BusS
             }
         }
         return result;
-
     }
 
     public String parse() {

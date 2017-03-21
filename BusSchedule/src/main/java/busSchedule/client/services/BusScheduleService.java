@@ -10,8 +10,8 @@ public interface BusScheduleService extends RemoteService {
     String parse();
     String getPageNumber();
     String loadTable();
-    String addRow(String row,int number);
-    String deleteRow(int number);
+    String addRow(String row, int number);
+    String deleteRow(int number, int pageNumber);
     String pressNextPage(int number);
     String pressPreviousPage(int number);
 

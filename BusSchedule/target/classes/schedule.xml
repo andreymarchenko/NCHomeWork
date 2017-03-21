@@ -71,4 +71,52 @@
         <time>18:40</time>
     </bus>
 
-<bus number="13"><departure>V</departure><destination>D</destination><time>13:13</time></bus><bus number="14"><departure>A</departure><destination>E</destination><time>12:20</time></bus></class>
+    <bus number="13">
+        <departure>V</departure>
+        <destination>D</destination>
+        <time>13:13</time>
+    </bus>
+
+    <bus number="14">
+        <departure>A</departure>
+        <destination>E</destination>
+        <time>12:20</time>
+    </bus>
+
+    <bus number="15">
+        <departure>D</departure>
+        <destination>F</destination>
+        <time>22:00</time>
+    </bus>
+
+    <bus number="16">
+        <departure>Z</departure>
+        <destination>X</destination>
+        <time>18:40</time>
+    </bus>
+
+    <bus number="17">
+        <departure>V</departure>
+        <destination>D</destination>
+        <time>13:13</time>
+    </bus>
+
+    <bus number="18">
+        <departure>A</departure>
+        <destination>E</destination>
+        <time>12:20</time>
+    </bus>
+
+    <bus number="19">
+        <departure>V</departure>
+        <destination>D</destination>
+        <time>13:13</time>
+    </bus>
+
+    <bus number="20">
+        <departure>A</departure>
+        <destination>E</destination>
+        <time>12:20</time>
+    </bus>
+    
+<bus number="88"><departure>899</departure><destination>lli</destination><time>il</time></bus></class>

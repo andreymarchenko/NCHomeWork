@@ -15,6 +15,8 @@ import com.google.gwt.user.cellview.client.TextColumn;
 import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.*;
 import busSchedule.client.entity.*;
+import com.google.gwt.view.client.SelectionChangeEvent;
+import com.google.gwt.view.client.SingleSelectionModel;
 
 import javax.inject.Inject;
 import java.util.ArrayList;
@@ -36,9 +38,6 @@ public class View extends Composite {
     Button addRow;
     @UiField
     Button deleteRow;
-    @UiField
-    Label label;
-
 
     private Controller controller;
     private InputForm inputForm;
@@ -62,6 +61,7 @@ public class View extends Composite {
     }
 
     public void initTableStructure() {
+
         NumberCell numberCell = new NumberCell();
         Column<Bus, Number> numberColumn = new Column<Bus, Number>(numberCell) {
             @Override
@@ -94,6 +94,8 @@ public class View extends Composite {
             }
         };
         cellTable.addColumn(timeColumn, "Travel time");
+
+
     }
 
     public void initTableData() {
@@ -126,9 +128,22 @@ public class View extends Composite {
 
             }
         });
+
+        final SingleSelectionModel<Bus> selectionModel = new SingleSelectionModel<Bus>();
+        cellTable.setSelectionModel(selectionModel);
+        selectionModel.addSelectionChangeHandler(
+                new SelectionChangeEvent.Handler() {
+                    public void onSelectionChange(SelectionChangeEvent event) {
+                        Bus selected = selectionModel.getSelectedObject();
+                        if (selected != null) {
+                            selectionModel.setSelected(selected, true);
+                        }
+                    }
+                });
+
         deleteRow.addClickHandler(new ClickHandler() {
             public void onClick(ClickEvent event) {
-                controller.deleteRow(1);
+                controller.deleteRow(selectionModel.getSelectedObject().getNumber());
             }
         });
     }
@@ -137,31 +152,26 @@ public class View extends Composite {
         return nextPage;
     }
 
-    public Label getLabel() {
-        return label;
-    }
-
-
     public void setView() {
-        nextPage.getElement().getStyle().setWidth(Window.getClientWidth() /21,  Style.Unit.PX);
-        nextPage.getElement().getStyle().setHeight(Window.getClientWidth() /25, Style.Unit.PX);
+        nextPage.getElement().getStyle().setWidth(Window.getClientWidth() / 21, Style.Unit.PX);
+        nextPage.getElement().getStyle().setHeight(Window.getClientWidth() / 25, Style.Unit.PX);
         nextPage.getElement().getStyle().setMarginLeft(0.1 * Window.getClientWidth(), Style.Unit.PX);
         nextPage.getElement().getStyle().setMarginTop(0.02 * Window.getClientWidth(), Style.Unit.PX);
 
-        previousPage.getElement().getStyle().setWidth(Window.getClientWidth() /21, Style.Unit.PX);
-        previousPage.getElement().getStyle().setHeight(Window.getClientWidth() /25, Style.Unit.PX);
+        previousPage.getElement().getStyle().setWidth(Window.getClientWidth() / 21, Style.Unit.PX);
+        previousPage.getElement().getStyle().setHeight(Window.getClientWidth() / 25, Style.Unit.PX);
         previousPage.getElement().getStyle().setMarginLeft(0.39 * Window.getClientWidth(), Style.Unit.PX);
         previousPage.getElement().getStyle().setMarginTop(0.02 * Window.getClientWidth(), Style.Unit.PX);
 
         addRow.getElement().getStyle().setMarginTop(0.31 * Window.getClientHeight(), Style.Unit.PX);
         addRow.getElement().getStyle().setMarginLeft(0.06 * Window.getClientWidth(), Style.Unit.PX);
-        addRow.getElement().getStyle().setWidth(Window.getClientWidth() /21,  Style.Unit.PX);
-        addRow.getElement().getStyle().setHeight(Window.getClientWidth() /25, Style.Unit.PX);
+        addRow.getElement().getStyle().setWidth(Window.getClientWidth() / 21, Style.Unit.PX);
+        addRow.getElement().getStyle().setHeight(Window.getClientWidth() / 25, Style.Unit.PX);
 
         deleteRow.getElement().getStyle().setMarginTop(0.1 * Window.getClientHeight(), Style.Unit.PX);
         deleteRow.getElement().getStyle().setMarginLeft(0.06 * Window.getClientWidth(), Style.Unit.PX);
-        deleteRow.getElement().getStyle().setWidth(Window.getClientWidth() /21,  Style.Unit.PX);
-        deleteRow.getElement().getStyle().setHeight(Window.getClientWidth() /25, Style.Unit.PX);
+        deleteRow.getElement().getStyle().setWidth(Window.getClientWidth() / 21, Style.Unit.PX);
+        deleteRow.getElement().getStyle().setHeight(Window.getClientWidth() / 25, Style.Unit.PX);
 
         cellTable.getElement().getStyle().setWidth(Window.getClientWidth() / 1.5, Style.Unit.PX);
         cellTable.getElement().getStyle().setHeight(Window.getClientHeight() / 1.5, Style.Unit.PX);

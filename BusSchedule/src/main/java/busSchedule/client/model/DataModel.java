@@ -41,7 +41,7 @@ public class DataModel {
     }
 
     public void deleteRow(int number) {
-        BusScheduleService.App.getInstance().deleteRow(number, new MyAsyncCallback(controller));
+        BusScheduleService.App.getInstance().deleteRow(number, currentPageNumber, new MyAsyncCallback(controller));
     }
 
     public void bind() {
@@ -60,7 +60,6 @@ public class DataModel {
                     currentPageNumber--;
                     BusScheduleService.App.getInstance().pressPreviousPage(currentPageNumber, new MyAsyncCallback(controller));
                 }
-
             }
         });
     }
