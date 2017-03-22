@@ -1,6 +1,5 @@
 package busSchedule.server;
 
-import com.google.gwt.user.client.Window;
 import com.google.gwt.user.server.rpc.RemoteServiceServlet;
 import busSchedule.client.services.BusScheduleService;
 import org.w3c.dom.*;
@@ -20,7 +19,9 @@ import java.io.IOException;
 
 public class BusScheduleServiceImpl extends RemoteServiceServlet implements BusScheduleService {
 
-    private String path = "C:\\Users\\Andrey\\IdeaProjects\\BusSchedule\\src\\busSchedule\\client\\schedule.xml";
+    ClassLoader classLoader = getClass().getClassLoader();
+
+    private String path = classLoader.getResource("schedule.xml").getFile();
 
     public String loadTable() {
         return showPage(1);
