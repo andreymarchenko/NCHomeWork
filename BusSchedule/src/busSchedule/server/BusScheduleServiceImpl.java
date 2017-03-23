@@ -1,5 +1,7 @@
 package busSchedule.server;
 
+import busSchedule.client.entity.Bus;
+import busSchedule.client.entity.Sorting;
 import com.google.gwt.user.server.rpc.RemoteServiceServlet;
 import busSchedule.client.services.BusScheduleService;
 import org.w3c.dom.*;
@@ -164,6 +166,29 @@ public class BusScheduleServiceImpl extends RemoteServiceServlet implements BusS
         return result;
     }
 
+    public String showPage(int number, String str) {
+        String[] data = str.split("/");
+        String result = "";
+        if (number * 40 <= data.length) {
+            for (int i = (number - 1) * 40; i < number * 40; i++) {
+                if (i != number * 40 - 1) {
+                    result += data[i] + "/";
+                } else {
+                    result += data[i];
+                }
+            }
+        } else {
+            for (int i = (number - 1) * 40; i < data.length; i++) {
+                if (i != data.length - 1) {
+                    result += data[i] + "/";
+                } else {
+                    result += data[i];
+                }
+            }
+        }
+        return result;
+    }
+
     public String parse() {
         String result = "";
         try {
@@ -190,6 +215,18 @@ public class BusScheduleServiceImpl extends RemoteServiceServlet implements BusS
         return result;
     }
 
+    public String busesToString(Bus[] buses) {
+        String result = "";
+        for (int i = 0; i < buses.length; i++) {
+            if (i == buses.length - 1) {
+                result += buses[i].getNumber() + "/" + buses[i].getStart() + "/" + buses[i].getEnd() + "/" + buses[i].getTime();
+            } else {
+                result += buses[i].getNumber() + "/" + buses[i].getStart() + "/" + buses[i].getEnd() + "/" + buses[i].getTime() + "/";
+            }
+        }
+        return result;
+    }
+
     public String separateLine(Element eElement) {
         return eElement.getAttribute("number") + "/"
                 + eElement.getElementsByTagName("departure")
@@ -203,5 +240,78 @@ public class BusScheduleServiceImpl extends RemoteServiceServlet implements BusS
                 .item(0)
                 .getTextContent();
 
+    }
+
+    public String sortByNumber(int number) {
+        String[] data = parse().split("/");
+        Bus[] buses = new Bus[data.length / 4];
+
+        int j = 0;
+        for (int i = 0; i < buses.length; i++) {
+            buses[i] = new Bus(Integer.parseInt(data[j]), data[j + 1], data[j + 2], data[j + 3]);
+            j += 4;
+        }
+
+        Sorting sorting = new Sorting(buses);
+
+        sorting.sortByNumber();
+
+        String result = busesToString(buses);
+        return showPage(number, result);
+    }
+
+
+    public String sortByDeparture(int number) {
+        String[] data = parse().split("/");
+        Bus[] buses = new Bus[data.length / 4];
+
+        int j = 0;
+        for (int i = 0; i < buses.length; i++) {
+            buses[i] = new Bus(Integer.parseInt(data[j]), data[j + 1], data[j + 2], data[j + 3]);
+            j += 4;
+        }
+
+        Sorting sorting = new Sorting(buses);
+
+        sorting.sortByDeparture();
+
+        String result = busesToString(buses);
+        return showPage(number, result);
+    }
+
+    public String sortByDestination(int number) {
+        String[] data = parse().split("/");
+        Bus[] buses = new Bus[data.length / 4];
+
+        int j = 0;
+        for (int i = 0; i < buses.length; i++) {
+            buses[i] = new Bus(Integer.parseInt(data[j]), data[j + 1], data[j + 2], data[j + 3]);
+            j += 4;
+        }
+
+        Sorting sorting = new Sorting(buses);
+
+        sorting.sortByDestination();
+
+        String result = busesToString(buses);
+        return showPage(number, result);
+    }
+
+    public String sortByTime(int number) {
+        String[] data = parse().split("/");
+        Bus[] buses = new Bus[data.length / 4];
+
+        int j = 0;
+        for (int i = 0; i < buses.length; i++) {
+            buses[i] = new Bus(Integer.parseInt(data[j]), data[j + 1], data[j + 2], data[j + 3]);
+            j += 4;
+        }
+
+        Sorting sorting = new Sorting(buses);
+
+        sorting.sortByTime();
+
+        String result = busesToString(buses);
+        return showPage(number, result);
     }
 }

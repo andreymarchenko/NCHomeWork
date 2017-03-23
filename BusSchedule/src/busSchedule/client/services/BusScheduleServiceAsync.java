@@ -16,4 +16,12 @@ public interface BusScheduleServiceAsync {
     void pressNextPage(int number, AsyncCallback<String> async);
 
     void pressPreviousPage(int number, AsyncCallback<String> async);
+
+    void sortByNumber(int number, AsyncCallback<String> async);
+
+    void sortByDeparture(int number, AsyncCallback<String> async);
+
+    void sortByDestination(int number, AsyncCallback<String> async);
+
+    void sortByTime(int number, AsyncCallback<String> async);
 }

@@ -14,11 +14,11 @@ public interface BusScheduleService extends RemoteService {
     String deleteRow(int number, int pageNumber);
     String pressNextPage(int number);
     String pressPreviousPage(int number);
+    String sortByNumber(int number);
+    String sortByDeparture(int number);
+    String sortByDestination(int number);
+    String sortByTime(int number);
 
-    /**
-     * Utility/Convenience class.
-     * Use BusScheduleService.App.getInstance() to access static instance of BusScheduleServiceAsync
-     */
     public static class App {
         private static BusScheduleServiceAsync ourInstance = GWT.create(BusScheduleService.class);
 

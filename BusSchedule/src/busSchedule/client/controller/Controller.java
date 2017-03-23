@@ -40,6 +40,22 @@ public class Controller {
         return eventBus.addHandler(PreviousPageEvent.TYPE, handler);
     }
 
+    public void sortByNumber() {
+        dataModel.sortByNumber();
+    }
+
+    public void sortByDeparture() {
+        dataModel.sortByDeparture();
+    }
+
+    public void sortByDestination() {
+        dataModel.sortByDestination();
+    }
+
+    public void sortByTime() {
+        dataModel.sortByTime();
+    }
+
     public void addRow(String str) {
         dataModel.addRow(str);
     }

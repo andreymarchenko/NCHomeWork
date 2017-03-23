@@ -45,6 +45,22 @@ public class DataModel {
         BusScheduleService.App.getInstance().getPageNumber(new PageNumberAsyncCallback());
     }
 
+    public void sortByNumber() {
+        BusScheduleService.App.getInstance().sortByNumber(currentPageNumber, new MyAsyncCallback(controller));
+    }
+
+    public void sortByDeparture() {
+        BusScheduleService.App.getInstance().sortByDeparture(currentPageNumber, new MyAsyncCallback(controller));
+    }
+
+    public void sortByDestination() {
+        BusScheduleService.App.getInstance().sortByDestination(currentPageNumber, new MyAsyncCallback(controller));
+    }
+
+    public void sortByTime() {
+        BusScheduleService.App.getInstance().sortByTime(currentPageNumber, new MyAsyncCallback(controller));
+    }
+
     public void bind() {
         controller.NextPageEventHandler(new NextPageEventHandler() {
             public void onNextPage(NextPageEvent nextPageEvent) {
