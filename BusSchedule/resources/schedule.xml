@@ -1,21 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><class>
 
-    <bus number="1">
-        <departure>A</departure>
-        <destination>F</destination>
-        <time>19:00</time>
-    </bus>
-
     <bus number="2">
         <departure>B</departure>
         <destination>X</destination>
         <time>22:00</time>
     </bus>
 
-    <bus number="3">
-        <departure>T</departure>
-        <destination>Y</destination>
-        <time>11:13</time>
+    <bus number="1">
+        <departure>A</departure>
+        <destination>F</destination>
+        <time>19:00</time>
     </bus>
 
     <bus number="4">
@@ -28,6 +22,12 @@
         <departure>K</departure>
         <destination>H</destination>
         <time>14:55</time>
+    </bus>
+
+    <bus number="3">
+        <departure>T</departure>
+        <destination>Y</destination>
+        <time>11:13</time>
     </bus>
 
     <bus number="6">
@@ -61,33 +61,16 @@
     </bus>
 
     <bus number="11">
-        <departure>E</departure>
-        <destination>D</destination>
-        <time>19:00</time>
+        <departure>H</departure>
+        <destination>A</destination>
+        <time>24:00</time>
     </bus>
 
     <bus number="12">
-        <departure>Y</departure>
-        <destination>D</destination>
-        <time>10:40</time>
+        <departure>I</departure>
+        <destination>H</destination>
+        <time>11:45</time>
     </bus>
 
-    <bus number="13">
-        <departure>A</departure>
-        <destination>N</destination>
-        <time>22:15</time>
-    </bus>
-
-    <bus number="14">
-        <departure>J</departure>
-        <destination>B</destination>
-        <time>22:10</time>
-    </bus>
-
-    <bus number="15">
-        <departure>A</departure>
-        <destination>C</destination>
-        <time>17:10</time>
-    </bus>
 
 </class>

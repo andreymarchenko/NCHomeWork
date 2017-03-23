@@ -20,6 +20,7 @@ import com.google.gwt.view.client.SingleSelectionModel;
 
 import javax.inject.Inject;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class View extends Composite {
 
@@ -38,12 +39,27 @@ public class View extends Composite {
     Button addRow;
     @UiField
     Button deleteRow;
+    @UiField
+    VerticalPanel sortingPanel;
+    @UiField
+    Button sortByNumber;
+    @UiField
+    Button sortByDeparture;
+    @UiField
+    Button sortByDestination;
+    @UiField
+    Button sortByTime;
+    @UiField
+    Label label;
 
     private Controller controller;
     private InputForm inputForm;
+    private Sorting sorting;
 
     private ArrayList<Bus> list = new ArrayList<Bus>();
     private CellTable<Bus> cellTable = new CellTable<Bus>();
+
+    private int sortBy = 0;
 
     @Inject
     public View(Controller controller) {
@@ -95,7 +111,6 @@ public class View extends Composite {
         };
         cellTable.addColumn(timeColumn, "Travel time");
 
-
     }
 
     public void initTableData() {
@@ -113,6 +128,7 @@ public class View extends Composite {
                 controller.pressPreviousPage();
             }
         });
+
         addRow.addClickHandler(new ClickHandler() {
             public void onClick(ClickEvent event) {
                 inputForm = new InputForm();
@@ -153,6 +169,35 @@ public class View extends Composite {
                 controller.deleteRow(selectionModel.getSelectedObject().getNumber());
             }
         });
+
+        sortByNumber.addClickHandler(new ClickHandler() {
+            @Override
+            public void onClick(ClickEvent event) {
+                sortBy = 1;
+            }
+        });
+
+        sortByDeparture.addClickHandler(new ClickHandler() {
+            @Override
+            public void onClick(ClickEvent event) {
+                sortBy = 2;
+            }
+        });
+
+        sortByDestination.addClickHandler(new ClickHandler() {
+            @Override
+            public void onClick(ClickEvent event) {
+                sortBy = 3;
+            }
+        });
+
+        sortByTime.addClickHandler(new ClickHandler() {
+            @Override
+            public void onClick(ClickEvent event) {
+                sortBy = 4;
+            }
+        });
+
     }
 
     public Button getNextPage() {
@@ -160,6 +205,7 @@ public class View extends Composite {
     }
 
     public void setView() {
+
         nextPage.getElement().getStyle().setWidth(Window.getClientWidth() / 21, Style.Unit.PX);
         nextPage.getElement().getStyle().setHeight(Window.getClientWidth() / 25, Style.Unit.PX);
         nextPage.getElement().getStyle().setMarginLeft(0.1 * Window.getClientWidth(), Style.Unit.PX);
@@ -182,8 +228,7 @@ public class View extends Composite {
 
         cellTable.getElement().getStyle().setWidth(Window.getClientWidth() / 1.5, Style.Unit.PX);
         cellTable.getElement().getStyle().setHeight(Window.getClientHeight() / 1.5, Style.Unit.PX);
-
-        cellTable.getElement().getStyle().setMarginLeft(Window.getClientWidth() / 6, Style.Unit.PX);
+        cellTable.getElement().getStyle().setMarginLeft(Window.getClientWidth() / 7, Style.Unit.PX);
         cellTable.getElement().getStyle().setMarginTop(Window.getClientHeight() / 12, Style.Unit.PX);
 
     }
@@ -191,9 +236,56 @@ public class View extends Composite {
     public void addData(String str) {
         list.clear();
         String[] data = str.split("/");
+        Bus[] buses = new Bus[data.length / 4];
 
-        for (int i = 0; i < data.length; i += 4) {
-            list.add(new Bus(Integer.parseInt(data[i]), data[i + 1], data[i + 2], data[i + 3]));
+        int j = 0;
+        for (int i = 0; i < buses.length; i++) {
+            buses[i] = new Bus(Integer.parseInt(data[j]), data[j + 1], data[j + 2], data[j + 3]);
+            j += 4;
+        }
+
+        Sorting sorting = new Sorting(buses);
+
+        if (sortBy == 1) {
+
+            sorting.sortByNumber();
+
+            for (int i = 0; i < buses.length; i++) {
+
+                list.add(buses[i]);
+            }
+        } else if (sortBy == 2) {
+
+            sorting.sortByDeparture();
+
+            for (int i = 0; i < buses.length; i++) {
+
+                list.add(buses[i]);
+            }
+        } else if (sortBy == 3) {
+
+            sorting.sortByDestination();
+
+            for (int i = 0; i < buses.length; i++) {
+
+                list.add(buses[i]);
+            }
+
+        } else if (sortBy == 4) {
+
+            sorting.sortByTime();
+
+            for (int i = 0; i < buses.length; i++) {
+
+                list.add(buses[i]);
+            }
+
+        } else {
+
+            for (int i = 0; i < data.length; i += 4) {
+
+                list.add(new Bus(Integer.parseInt(data[i]), data[i + 1], data[i + 2], data[i + 3]));
+            }
         }
 
         cellTable.setRowCount(list.size(), true);

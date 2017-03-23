@@ -5,6 +5,13 @@
 
     <g:VerticalPanel ui:field="mainPanel" >
         <g:HorizontalPanel>
+            <g:VerticalPanel ui:field="sortingPanel">
+                <g:Label ui:field="label" text = "Sorting by:"/>
+                <g:Button ui:field="sortByNumber" text="Number"/>
+                <g:Button ui:field="sortByDeparture" text="Departure"/>
+                <g:Button ui:field="sortByDestination" text="Destination"/>
+                <g:Button ui:field="sortByTime" text="Time"/>
+            </g:VerticalPanel>
             <g:FlowPanel ui:field="tablePanel"/>
             <g:VerticalPanel>
                 <g:Button ui:field="addRow" text="Add"/>

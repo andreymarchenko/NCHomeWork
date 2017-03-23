@@ -90,8 +90,6 @@ public class DataModel {
 
         public void onSuccess(String result) {
             String str[] = result.split("-");
-            String hh = str[0];
-            String sq = str[1];
             controller.setTableModel(str[0]);
             currentPageNumber = Integer.parseInt(str[1]);
         }
