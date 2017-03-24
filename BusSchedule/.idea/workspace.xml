@@ -2,26 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d2de66e-64a8-4fa7-adc2-cfd7ca7b44da" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/busSchedule/client/view/FormatForm.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BusSchedule/busSchedule/client/controller/Controller.class" afterPath="$PROJECT_DIR$/out/production/BusSchedule/busSchedule/client/controller/Controller.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BusSchedule/busSchedule/client/model/DataModel$1.class" afterPath="$PROJECT_DIR$/out/production/BusSchedule/busSchedule/client/model/DataModel$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BusSchedule/busSchedule/client/model/DataModel$2.class" afterPath="$PROJECT_DIR$/out/production/BusSchedule/busSchedule/client/model/DataModel$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BusSchedule/busSchedule/client/model/DataModel$AddDeleteAsyncCallback.class" afterPath="$PROJECT_DIR$/out/production/BusSchedule/busSchedule/client/model/DataModel$AddDeleteAsyncCallback.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BusSchedule/busSchedule/client/model/DataModel$MyAsyncCallback.class" afterPath="$PROJECT_DIR$/out/production/BusSchedule/busSchedule/client/model/DataModel$MyAsyncCallback.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BusSchedule/busSchedule/client/model/DataModel$PageNumberAsyncCallback.class" afterPath="$PROJECT_DIR$/out/production/BusSchedule/busSchedule/client/model/DataModel$PageNumberAsyncCallback.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BusSchedule/busSchedule/client/model/DataModel.class" afterPath="$PROJECT_DIR$/out/production/BusSchedule/busSchedule/client/model/DataModel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BusSchedule/busSchedule/client/services/BusScheduleService.class" afterPath="$PROJECT_DIR$/out/production/BusSchedule/busSchedule/client/services/BusScheduleService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BusSchedule/busSchedule/client/services/BusScheduleServiceAsync.class" afterPath="$PROJECT_DIR$/out/production/BusSchedule/busSchedule/client/services/BusScheduleServiceAsync.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BusSchedule/busSchedule/client/view/View$9.class" afterPath="$PROJECT_DIR$/out/production/BusSchedule/busSchedule/client/view/View$9.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BusSchedule/busSchedule/client/view/View.class" afterPath="$PROJECT_DIR$/out/production/BusSchedule/busSchedule/client/view/View.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BusSchedule/busSchedule/client/services/BusScheduleService$App.class" afterPath="$PROJECT_DIR$/out/production/BusSchedule/busSchedule/client/services/BusScheduleService$App.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BusSchedule/busSchedule/client/view/View$1.class" afterPath="$PROJECT_DIR$/out/production/BusSchedule/busSchedule/client/view/View$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BusSchedule/busSchedule/client/view/View$2.class" afterPath="$PROJECT_DIR$/out/production/BusSchedule/busSchedule/client/view/View$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BusSchedule/busSchedule/client/view/View$3.class" afterPath="$PROJECT_DIR$/out/production/BusSchedule/busSchedule/client/view/View$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BusSchedule/busSchedule/client/view/View$4.class" afterPath="$PROJECT_DIR$/out/production/BusSchedule/busSchedule/client/view/View$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BusSchedule/busSchedule/client/view/View$5.class" afterPath="$PROJECT_DIR$/out/production/BusSchedule/busSchedule/client/view/View$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BusSchedule/busSchedule/client/view/View$6.class" afterPath="$PROJECT_DIR$/out/production/BusSchedule/busSchedule/client/view/View$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BusSchedule/busSchedule/client/view/View$7$1.class" afterPath="$PROJECT_DIR$/out/production/BusSchedule/busSchedule/client/view/View$7$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BusSchedule/busSchedule/client/view/View$7.class" afterPath="$PROJECT_DIR$/out/production/BusSchedule/busSchedule/client/view/View$7.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BusSchedule/busSchedule/client/view/View$8.class" afterPath="$PROJECT_DIR$/out/production/BusSchedule/busSchedule/client/view/View$8.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BusSchedule/busSchedule/server/BusScheduleServiceImpl.class" afterPath="$PROJECT_DIR$/out/production/BusSchedule/busSchedule/server/BusScheduleServiceImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/busSchedule/client/controller/Controller.java" afterPath="$PROJECT_DIR$/src/busSchedule/client/controller/Controller.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/busSchedule/client/model/DataModel.java" afterPath="$PROJECT_DIR$/src/busSchedule/client/model/DataModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/busSchedule/client/services/BusScheduleService.java" afterPath="$PROJECT_DIR$/src/busSchedule/client/services/BusScheduleService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/busSchedule/client/services/BusScheduleServiceAsync.java" afterPath="$PROJECT_DIR$/src/busSchedule/client/services/BusScheduleServiceAsync.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BusSchedule/busSchedule/client/view/View.ui.xml" afterPath="$PROJECT_DIR$/out/production/BusSchedule/busSchedule/client/view/View.ui.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/busSchedule/client/view/FormatForm.java" afterPath="$PROJECT_DIR$/src/busSchedule/client/view/FormatForm.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/busSchedule/client/view/View.java" afterPath="$PROJECT_DIR$/src/busSchedule/client/view/View.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/busSchedule/client/view/View.ui.xml" afterPath="$PROJECT_DIR$/src/busSchedule/client/view/View.ui.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/busSchedule/server/BusScheduleServiceImpl.java" afterPath="$PROJECT_DIR$/src/busSchedule/server/BusScheduleServiceImpl.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -41,25 +36,26 @@
       <file leaf-file-name="View.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/busSchedule/client/view/View.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-41">
-              <caret line="223" column="22" lean-forward="false" selection-start-line="223" selection-start-column="22" selection-end-line="223" selection-end-column="22" />
+            <state relative-caret-position="624">
+              <caret line="276" column="26" lean-forward="false" selection-start-line="276" selection-start-column="26" selection-end-line="276" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#View#0;class#View#0" expanded="false" />
                 <element signature="method#createUI#0;class#View#0" expanded="false" />
                 <element signature="method#initTableStructure#0;class#View#0" expanded="false" />
-                <element signature="class#3938:5140" expanded="false" />
+                <element signature="class#3985:5187" expanded="false" />
                 <element signature="method#setView#0;class#View#0" expanded="false" />
+                <element signature="method#addData#0;class#View#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FormatForm.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="FormatForm.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/busSchedule/client/view/FormatForm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="57" column="5" lean-forward="false" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
+            <state relative-caret-position="114">
+              <caret line="20" column="25" lean-forward="true" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -70,28 +66,9 @@
       <file leaf-file-name="InputForm.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/busSchedule/client/view/InputForm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="81" column="21" lean-forward="false" selection-start-line="81" selection-start-column="21" selection-end-line="81" selection-end-column="21" />
+            <state relative-caret-position="255">
+              <caret line="123" column="8" lean-forward="true" selection-start-line="123" selection-start-column="8" selection-end-line="123" selection-end-column="77" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/busSchedule/client/controller/Controller.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="83" column="61" lean-forward="false" selection-start-line="83" selection-start-column="31" selection-end-line="83" selection-end-column="61" />
-              <folding>
-                <element signature="e#2180#2181#0" expanded="true" />
-                <element signature="e#2237#2238#0" expanded="true" />
-                <element signature="e#2306#2307#0" expanded="true" />
-                <element signature="e#2366#2367#0" expanded="true" />
-                <element signature="e#2437#2438#0" expanded="true" />
-                <element signature="e#2499#2500#0" expanded="true" />
-                <element signature="e#2563#2564#0" expanded="true" />
-                <element signature="e#2618#2619#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -109,11 +86,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BusScheduleServiceImpl.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BusScheduleServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/busSchedule/server/BusScheduleServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="293" column="49" lean-forward="true" selection-start-line="293" selection-start-column="49" selection-end-line="293" selection-end-column="49" />
+            <state relative-caret-position="-175">
+              <caret line="315" column="42" lean-forward="false" selection-start-line="315" selection-start-column="42" selection-end-line="315" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#getPageNumber#0;class#BusScheduleServiceImpl#0" expanded="false" />
@@ -124,14 +101,23 @@
                 <element signature="method#parse#0;class#BusScheduleServiceImpl#0" expanded="false" />
                 <element signature="method#separateLine#0;class#BusScheduleServiceImpl#0" expanded="false" />
                 <element signature="method#sortByNumber#0;class#BusScheduleServiceImpl#0" expanded="false" />
-                <element signature="method#sortByDeparture#0;class#BusScheduleServiceImpl#0" expanded="false" />
-                <element signature="method#sortByTime#0;class#BusScheduleServiceImpl#0" expanded="false" />
-                <element signature="e#12266#12267#0" expanded="true" />
-                <element signature="e#12291#12292#0" expanded="true" />
-                <element signature="e#12368#12369#0" expanded="true" />
-                <element signature="e#12393#12394#0" expanded="true" />
-                <element signature="e#12463#12464#0" expanded="true" />
-                <element signature="e#12488#12489#0" expanded="true" />
+                <element signature="method#filterByNumber#0;class#BusScheduleServiceImpl#0" expanded="false" />
+                <element signature="method#filterByDeparture#0;class#BusScheduleServiceImpl#0" expanded="false" />
+                <element signature="method#filterByDestination#0;class#BusScheduleServiceImpl#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Sorting.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/busSchedule/client/entity/Sorting.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="60" column="16" lean-forward="true" selection-start-line="60" selection-start-column="16" selection-end-line="60" selection-end-column="48" />
+              <folding>
+                <element signature="method#sortByNumber#0;class#Sorting#0" expanded="false" />
+                <element signature="method#sortByDeparture#0;class#Sorting#0" expanded="false" />
+                <element signature="method#sortByDestination#0;class#Sorting#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -142,6 +128,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="107">
               <caret line="599" column="0" lean-forward="false" selection-start-line="599" selection-start-column="0" selection-end-line="599" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="View.ui.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/busSchedule/client/view/View.ui.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="14" column="53" lean-forward="false" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -162,16 +158,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="281">
               <caret line="27" column="23" lean-forward="false" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="View.ui.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/busSchedule/client/view/View.ui.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="50" lean-forward="false" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -214,9 +200,9 @@
         <option value="$PROJECT_DIR$/src/busSchedule/client/model/DataModel.java" />
         <option value="$PROJECT_DIR$/src/busSchedule/client/services/BusScheduleService.java" />
         <option value="$PROJECT_DIR$/src/busSchedule/client/services/BusScheduleServiceAsync.java" />
+        <option value="$PROJECT_DIR$/src/busSchedule/server/BusScheduleServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/busSchedule/client/view/View.java" />
         <option value="$PROJECT_DIR$/src/busSchedule/client/view/FormatForm.java" />
-        <option value="$PROJECT_DIR$/src/busSchedule/server/BusScheduleServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -374,6 +360,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1010,7 +1000,7 @@
       <workItem from="1490339465039" duration="1546000" />
       <workItem from="1490348426044" duration="935000" />
       <workItem from="1490385310871" duration="2126000" />
-      <workItem from="1490390927400" duration="3337000" />
+      <workItem from="1490390927400" duration="6822000" />
     </task>
     <task id="LOCAL-00001" summary="Added all sorting">
       <created>1490304722206</created>
@@ -1026,11 +1016,18 @@
       <option name="project" value="LOCAL" />
       <updated>1490308823304</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added filter by number on server side">
+      <created>1490394332313</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1490394332313</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50460000" />
+    <option name="totallyTimeSpent" value="53945000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1038,7 +1035,7 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36410257" sideWeight="0.50907713" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36410257" sideWeight="0.5151286" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1048,15 +1045,15 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.4969743" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.49394855" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36410257" sideWeight="0.49092284" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36410257" sideWeight="0.48487142" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22995462" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1079,11 +1076,12 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added all sorting" />
     <MESSAGE value="Added all sorting to server side" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added all sorting to server side" />
+    <MESSAGE value="Added filter by number on server side" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added filter by number on server side" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="16" />
+      <option name="time" value="18" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1114,14 +1112,9 @@
             <element signature="method#parse#0;class#BusScheduleServiceImpl#0" expanded="false" />
             <element signature="method#separateLine#0;class#BusScheduleServiceImpl#0" expanded="false" />
             <element signature="method#sortByNumber#0;class#BusScheduleServiceImpl#0" expanded="false" />
-            <element signature="method#sortByDeparture#0;class#BusScheduleServiceImpl#0" expanded="false" />
-            <element signature="method#sortByTime#0;class#BusScheduleServiceImpl#0" expanded="false" />
-            <element signature="e#12266#12267#0" expanded="true" />
-            <element signature="e#12291#12292#0" expanded="true" />
-            <element signature="e#12368#12369#0" expanded="true" />
-            <element signature="e#12393#12394#0" expanded="true" />
-            <element signature="e#12463#12464#0" expanded="true" />
-            <element signature="e#12488#12489#0" expanded="true" />
+            <element signature="method#filterByNumber#0;class#BusScheduleServiceImpl#0" expanded="false" />
+            <element signature="method#filterByDeparture#0;class#BusScheduleServiceImpl#0" expanded="false" />
+            <element signature="method#filterByDestination#0;class#BusScheduleServiceImpl#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1208,14 +1201,9 @@
             <element signature="method#parse#0;class#BusScheduleServiceImpl#0" expanded="false" />
             <element signature="method#separateLine#0;class#BusScheduleServiceImpl#0" expanded="false" />
             <element signature="method#sortByNumber#0;class#BusScheduleServiceImpl#0" expanded="false" />
-            <element signature="method#sortByDeparture#0;class#BusScheduleServiceImpl#0" expanded="false" />
-            <element signature="method#sortByTime#0;class#BusScheduleServiceImpl#0" expanded="false" />
-            <element signature="e#12266#12267#0" expanded="true" />
-            <element signature="e#12291#12292#0" expanded="true" />
-            <element signature="e#12368#12369#0" expanded="true" />
-            <element signature="e#12393#12394#0" expanded="true" />
-            <element signature="e#12463#12464#0" expanded="true" />
-            <element signature="e#12488#12489#0" expanded="true" />
+            <element signature="method#filterByNumber#0;class#BusScheduleServiceImpl#0" expanded="false" />
+            <element signature="method#filterByDeparture#0;class#BusScheduleServiceImpl#0" expanded="false" />
+            <element signature="method#filterByDestination#0;class#BusScheduleServiceImpl#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1414,26 +1402,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/busSchedule/client/entity/Sorting.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="15" column="40" lean-forward="false" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/busSchedule/client/events/PreviousPageEventHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/busSchedule/client/view/View.ui.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="50" lean-forward="false" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="50" />
           <folding />
         </state>
       </provider>
@@ -1474,44 +1446,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/busSchedule/client/view/InputForm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="81" column="21" lean-forward="false" selection-start-line="81" selection-start-column="21" selection-end-line="81" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/busSchedule/client/view/FormatForm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="57" column="5" lean-forward="false" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/busSchedule/client/services/BusScheduleService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
           <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/busSchedule/client/view/View.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-41">
-          <caret line="223" column="22" lean-forward="false" selection-start-line="223" selection-start-column="22" selection-end-line="223" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#View#0;class#View#0" expanded="false" />
-            <element signature="method#createUI#0;class#View#0" expanded="false" />
-            <element signature="method#initTableStructure#0;class#View#0" expanded="false" />
-            <element signature="class#3938:5140" expanded="false" />
-            <element signature="method#setView#0;class#View#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1523,10 +1462,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/busSchedule/client/entity/Sorting.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="60" column="16" lean-forward="true" selection-start-line="60" selection-start-column="16" selection-end-line="60" selection-end-column="48" />
+          <folding>
+            <element signature="method#sortByNumber#0;class#Sorting#0" expanded="false" />
+            <element signature="method#sortByDeparture#0;class#Sorting#0" expanded="false" />
+            <element signature="method#sortByDestination#0;class#Sorting#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/busSchedule/server/BusScheduleServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="293" column="49" lean-forward="true" selection-start-line="293" selection-start-column="49" selection-end-line="293" selection-end-column="49" />
+        <state relative-caret-position="-175">
+          <caret line="315" column="42" lean-forward="false" selection-start-line="315" selection-start-column="42" selection-end-line="315" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#getPageNumber#0;class#BusScheduleServiceImpl#0" expanded="false" />
@@ -1537,14 +1488,51 @@
             <element signature="method#parse#0;class#BusScheduleServiceImpl#0" expanded="false" />
             <element signature="method#separateLine#0;class#BusScheduleServiceImpl#0" expanded="false" />
             <element signature="method#sortByNumber#0;class#BusScheduleServiceImpl#0" expanded="false" />
-            <element signature="method#sortByDeparture#0;class#BusScheduleServiceImpl#0" expanded="false" />
-            <element signature="method#sortByTime#0;class#BusScheduleServiceImpl#0" expanded="false" />
-            <element signature="e#12266#12267#0" expanded="true" />
-            <element signature="e#12291#12292#0" expanded="true" />
-            <element signature="e#12368#12369#0" expanded="true" />
-            <element signature="e#12393#12394#0" expanded="true" />
-            <element signature="e#12463#12464#0" expanded="true" />
-            <element signature="e#12488#12489#0" expanded="true" />
+            <element signature="method#filterByNumber#0;class#BusScheduleServiceImpl#0" expanded="false" />
+            <element signature="method#filterByDeparture#0;class#BusScheduleServiceImpl#0" expanded="false" />
+            <element signature="method#filterByDestination#0;class#BusScheduleServiceImpl#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/busSchedule/client/view/View.ui.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="14" column="53" lean-forward="false" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/busSchedule/client/view/InputForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="123" column="8" lean-forward="true" selection-start-line="123" selection-start-column="8" selection-end-line="123" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/busSchedule/client/view/View.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="276" column="26" lean-forward="false" selection-start-line="276" selection-start-column="26" selection-end-line="276" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#View#0;class#View#0" expanded="false" />
+            <element signature="method#createUI#0;class#View#0" expanded="false" />
+            <element signature="method#initTableStructure#0;class#View#0" expanded="false" />
+            <element signature="class#3985:5187" expanded="false" />
+            <element signature="method#setView#0;class#View#0" expanded="false" />
+            <element signature="method#addData#0;class#View#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/busSchedule/client/view/FormatForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="20" column="25" lean-forward="true" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

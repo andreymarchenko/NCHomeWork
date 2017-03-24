@@ -1,7 +1,9 @@
 package busSchedule.client.view;
 
+import com.google.gwt.dom.client.Style;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.ClickHandler;
+import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.*;
 
 public class FormatForm extends DialogBox {
@@ -19,10 +21,10 @@ public class FormatForm extends DialogBox {
     private Label sortBy;
 
     public FormatForm(int format) {
-        if (format == 1) createMarkUp("Sort by number");
-        else if (format == 2) createMarkUp("Sort by departure");
-        else if (format == 3) createMarkUp("Sort by destination");
-        else createMarkUp("Sort by time");
+        if (format == 1) createMarkUp("Filter by number");
+        else if (format == 2) createMarkUp("Filter by departure");
+        else if (format == 3) createMarkUp("Filter by destination");
+        else createMarkUp("Filter by time");
         setStyle();
         bind();
         super.setAnimationEnabled(true);
@@ -62,6 +64,39 @@ public class FormatForm extends DialogBox {
     }
 
     public void setStyle() {
+        this.getElement().getStyle().setBackgroundColor("White");
+        this.getElement().getStyle().setWidth(320, Style.Unit.PX);
+        this.getElement().getStyle().setHeight(250, Style.Unit.PX);
+        this.setPopupPosition((Window.getClientWidth() - 320) / 2, (Window.getClientHeight() - 250) / 2);
+        this.getElement().getStyle().setBorderStyle(Style.BorderStyle.SOLID);
+        this.getElement().getStyle().setBorderWidth(1, Style.Unit.PX);
+        this.getElement().getStyle().setBorderColor("Gray");
+
+        sortBy.getElement().getStyle().setMarginLeft(105, Style.Unit.PX);
+        sortBy.getElement().getStyle().setMarginTop(15, Style.Unit.PX);
+
+        leftPanel.getElement().getStyle().setMarginLeft(50, Style.Unit.PX);
+        leftPanel.getElement().getStyle().setMarginTop(35, Style.Unit.PX);
+
+        rightPanel.getElement().getStyle().setMarginLeft(30, Style.Unit.PX);
+        rightPanel.getElement().getStyle().setMarginTop(35, Style.Unit.PX);
+
+        from.getElement().getStyle().setMarginTop(7, Style.Unit.PX);
+        to.getElement().getStyle().setMarginTop(30, Style.Unit.PX);
+
+        toText.getElement().getStyle().setMarginTop(15, Style.Unit.PX);
+
+        buttonPanel.getElement().getStyle().setMarginTop(30, Style.Unit.PX);
+
+        ok.getElement().getStyle().setWidth(60, Style.Unit.PX);
+        ok.getElement().getStyle().setHeight(30, Style.Unit.PX);
+        ok.getElement().getStyle().setMarginLeft(95, Style.Unit.PX);
+
+        close.getElement().getStyle().setWidth(60, Style.Unit.PX);
+        close.getElement().getStyle().setHeight(30, Style.Unit.PX);
+
+        close.getElement().getStyle().setMarginLeft(20, Style.Unit.PX);
+
 
     }
 

@@ -43,6 +43,8 @@ public class View extends Composite {
     @UiField
     VerticalPanel sortingPanel;
     @UiField
+    VerticalPanel filteringPanel;
+    @UiField
     Button sortByNumber;
     @UiField
     Button sortByDeparture;
@@ -272,14 +274,29 @@ public class View extends Composite {
 
     }
 
-    public Button getNextPage() {
-        return nextPage;
-    }
-
     public void setView() {
 
-        sortingPanel.getElement().getStyle().setMarginLeft(Window.getClientWidth() / 17, Style.Unit.PX);
+        sortingPanel.getElement().getStyle().setMarginLeft(Window.getClientWidth() / 45, Style.Unit.PX);
         sortingPanel.getElement().getStyle().setMarginTop(Window.getClientWidth() / 15, Style.Unit.PX);
+
+        filteringPanel.getElement().getStyle().setMarginLeft(Window.getClientWidth() / 45, Style.Unit.PX);
+        filteringPanel.getElement().getStyle().setMarginTop(Window.getClientWidth() / 15, Style.Unit.PX);
+
+        filterByNumber.getElement().getStyle().setWidth(Window.getClientWidth() / 17, Style.Unit.PX);
+        filterByNumber.getElement().getStyle().setHeight(Window.getClientWidth() / 25, Style.Unit.PX);
+        filterByNumber.getElement().getStyle().setMarginTop(Window.getClientWidth() / 50, Style.Unit.PX);
+
+        filterByDeparture.getElement().getStyle().setWidth(Window.getClientWidth() / 17, Style.Unit.PX);
+        filterByDeparture.getElement().getStyle().setHeight(Window.getClientWidth() / 25, Style.Unit.PX);
+        filterByDeparture.getElement().getStyle().setMarginTop(Window.getClientWidth() / 65, Style.Unit.PX);
+
+        filterByDestination.getElement().getStyle().setWidth(Window.getClientWidth() / 17, Style.Unit.PX);
+        filterByDestination.getElement().getStyle().setHeight(Window.getClientWidth() / 25, Style.Unit.PX);
+        filterByDestination.getElement().getStyle().setMarginTop(Window.getClientWidth() / 65, Style.Unit.PX);
+
+        filterByTime.getElement().getStyle().setWidth(Window.getClientWidth() / 17, Style.Unit.PX);
+        filterByTime.getElement().getStyle().setHeight(Window.getClientWidth() / 25, Style.Unit.PX);
+        filterByTime.getElement().getStyle().setMarginTop(Window.getClientWidth() / 65, Style.Unit.PX);
 
         sortByNumber.getElement().getStyle().setWidth(Window.getClientWidth() / 17, Style.Unit.PX);
         sortByNumber.getElement().getStyle().setHeight(Window.getClientWidth() / 25, Style.Unit.PX);
@@ -319,7 +336,7 @@ public class View extends Composite {
 
         cellTable.getElement().getStyle().setWidth(Window.getClientWidth() / 1.5, Style.Unit.PX);
         cellTable.getElement().getStyle().setHeight(Window.getClientHeight() / 1.5, Style.Unit.PX);
-        cellTable.getElement().getStyle().setMarginLeft(Window.getClientWidth() / 14, Style.Unit.PX);
+        cellTable.getElement().getStyle().setMarginLeft(Window.getClientWidth() / 30, Style.Unit.PX);
         cellTable.getElement().getStyle().setMarginTop(Window.getClientHeight() / 12, Style.Unit.PX);
 
     }

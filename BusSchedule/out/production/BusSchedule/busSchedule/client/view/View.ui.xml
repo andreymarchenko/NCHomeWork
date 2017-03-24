@@ -3,14 +3,21 @@
              xmlns:g='urn:import:com.google.gwt.user.client.ui'>
 
 
-    <g:VerticalPanel ui:field="mainPanel" >
+    <g:VerticalPanel ui:field="mainPanel">
         <g:HorizontalPanel>
             <g:VerticalPanel ui:field="sortingPanel">
-                <g:Label ui:field="label" text = "Sorting by:"/>
+                <g:Label ui:field="sortLabel" text="Sort by:"/>
                 <g:Button ui:field="sortByNumber" text="Number"/>
                 <g:Button ui:field="sortByDeparture" text="Departure"/>
                 <g:Button ui:field="sortByDestination" text="Destination"/>
                 <g:Button ui:field="sortByTime" text="Time"/>
+            </g:VerticalPanel >
+            <g:VerticalPanel ui:field="filteringPanel">
+                <g:Label ui:field="filterLabel" text="Filter by:"/>
+                <g:Button ui:field="filterByNumber" text="Number"/>
+                <g:Button ui:field="filterByDeparture" text="Departure"/>
+                <g:Button ui:field="filterByDestination" text="Destination"/>
+                <g:Button ui:field="filterByTime" text="Time"/>
             </g:VerticalPanel>
             <g:FlowPanel ui:field="tablePanel"/>
             <g:VerticalPanel>
