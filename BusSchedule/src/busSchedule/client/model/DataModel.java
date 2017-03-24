@@ -8,6 +8,8 @@ import busSchedule.client.events.PreviousPageEventHandler;
 import busSchedule.client.services.BusScheduleService;
 import com.google.gwt.event.shared.EventBus;
 import com.google.gwt.user.client.rpc.AsyncCallback;
+import com.google.gwt.user.client.ui.TextArea;
+
 import javax.inject.Inject;
 
 
@@ -79,6 +81,26 @@ public class DataModel {
                 }
             }
         });
+    }
+
+    public void filterByNumber(String fromText, String toText) {
+        BusScheduleService.App.getInstance().filterByNumber(currentPageNumber,
+                fromText, toText, new MyAsyncCallback(controller));
+    }
+
+    public void filterByDeparture(String fromText, String toText) {
+        BusScheduleService.App.getInstance().filterByDeparture(currentPageNumber,
+                fromText, toText, new MyAsyncCallback(controller));
+    }
+
+    public void filterByDestination(String fromText, String toText) {
+        BusScheduleService.App.getInstance().filterByDestination(currentPageNumber,
+                fromText, toText, new MyAsyncCallback(controller));
+    }
+
+    public void filterByTime(String fromText, String toText) {
+        BusScheduleService.App.getInstance().filterByTime(currentPageNumber,
+                fromText, toText, new MyAsyncCallback(controller));
     }
 
     private static class MyAsyncCallback implements AsyncCallback<String> {

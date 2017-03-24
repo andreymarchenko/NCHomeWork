@@ -24,4 +24,12 @@ public interface BusScheduleServiceAsync {
     void sortByDestination(int number, AsyncCallback<String> async);
 
     void sortByTime(int number, AsyncCallback<String> async);
+
+    void filterByNumber(int number, String from, String to, AsyncCallback<String> async);
+
+    void filterByDeparture(int number, String from, String to, AsyncCallback<String> async);
+
+    void filterByDestination(int number, String from, String to, AsyncCallback<String> async);
+
+    void filterByTime(int number, String from, String to, AsyncCallback<String> async);
 }

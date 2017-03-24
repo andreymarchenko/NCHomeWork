@@ -18,6 +18,7 @@ import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class BusScheduleServiceImpl extends RemoteServiceServlet implements BusScheduleService {
 
@@ -227,6 +228,18 @@ public class BusScheduleServiceImpl extends RemoteServiceServlet implements BusS
         return result;
     }
 
+    public String busListToString(ArrayList<Bus> buses) {
+        String result = "";
+        for (int i = 0; i < buses.size(); i++) {
+            if (i == buses.size() - 1) {
+                result += buses.get(i).getNumber() + "/" + buses.get(i).getStart() + "/" + buses.get(i).getEnd() + "/" + buses.get(i).getTime();
+            } else {
+                result += buses.get(i).getNumber() + "/" + buses.get(i).getStart() + "/" + buses.get(i).getEnd() + "/" + buses.get(i).getTime() + "/";
+            }
+        }
+        return result;
+    }
+
     public String separateLine(Element eElement) {
         return eElement.getAttribute("number") + "/"
                 + eElement.getElementsByTagName("departure")
@@ -259,7 +272,6 @@ public class BusScheduleServiceImpl extends RemoteServiceServlet implements BusS
         String result = busesToString(buses);
         return showPage(number, result);
     }
-
 
     public String sortByDeparture(int number) {
         String[] data = parse().split("/");
@@ -313,5 +325,44 @@ public class BusScheduleServiceImpl extends RemoteServiceServlet implements BusS
 
         String result = busesToString(buses);
         return showPage(number, result);
+    }
+
+    public String filterByNumber(int number, String from, String to) {
+        String str = showPage(number);
+        String[] data = str.split("/");
+
+        Bus[] buses = new Bus[data.length / 4];
+        int j = 0;
+        for (int i = 0; i < buses.length; i++) {
+            buses[i] = new Bus(Integer.parseInt(data[j]), data[j + 1], data[j + 2], data[j + 3]);
+            j += 4;
+        }
+
+        ArrayList<Bus> filteredBuses = new ArrayList<>();
+        for (int i = 0; i < buses.length; i++) {
+            if (buses[i].getNumber() >= Integer.parseInt(from) &&
+                    buses[i].getNumber() <= Integer.parseInt(to)) {
+                filteredBuses.add(buses[i]);
+            }
+        }
+
+        if (filteredBuses.size() != 0) {
+            return busListToString(filteredBuses);
+        } else {
+            String s = "0/Not Found/Not Found/Not Found";
+            return s;
+        }
+    }
+
+    public String filterByDeparture(int number, String from, String to) {
+        return "";
+    }
+
+    public String filterByDestination(int number, String from, String to) {
+        return "";
+    }
+
+    public String filterByTime(int number, String from, String to) {
+        return "";
     }
 }

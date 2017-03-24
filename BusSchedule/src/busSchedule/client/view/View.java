@@ -15,11 +15,13 @@ import com.google.gwt.user.cellview.client.TextColumn;
 import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.*;
 import busSchedule.client.entity.*;
+import com.google.gwt.view.client.MultiSelectionModel;
 import com.google.gwt.view.client.SelectionChangeEvent;
 import com.google.gwt.view.client.SingleSelectionModel;
 
 import javax.inject.Inject;
 import java.util.ArrayList;
+import java.util.Set;
 
 public class View extends Composite {
 
@@ -49,7 +51,13 @@ public class View extends Composite {
     @UiField
     Button sortByTime;
     @UiField
-    Label label;
+    Button filterByTime;
+    @UiField
+    Button filterByNumber;
+    @UiField
+    Button filterByDeparture;
+    @UiField
+    Button filterByDestination;
 
     private Controller controller;
     private InputForm inputForm;
@@ -119,7 +127,6 @@ public class View extends Composite {
         nextPage.addClickHandler(new ClickHandler() {
             public void onClick(ClickEvent event) {
                 controller.pressNextPage();
-
             }
         });
         previousPage.addClickHandler(new ClickHandler() {
@@ -163,6 +170,16 @@ public class View extends Composite {
                     }
                 });
 
+      /*  final MultiSelectionModel<Bus> selectionModel = new MultiSelectionModel<Bus>();
+        cellTable.setSelectionModel(selectionModel);
+        selectionModel.addSelectionChangeHandler(new SelectionChangeEvent.Handler() {
+            @Override
+            public void onSelectionChange(SelectionChangeEvent event) {
+                Set<Bus> selected = selectionModel.getSelectedSet();
+                Bus[] s =(Bus[])selected.toArray();
+            }
+        });*/
+
         deleteRow.addClickHandler(new ClickHandler() {
             public void onClick(ClickEvent event) {
                 controller.deleteRow(selectionModel.getSelectedObject().getNumber());
@@ -198,6 +215,58 @@ public class View extends Composite {
             public void onClick(ClickEvent event) {
                 sortBy = 4;
                 controller.sortByTime();
+            }
+        });
+
+        filterByNumber.addClickHandler(new ClickHandler() {
+            @Override
+            public void onClick(ClickEvent event) {
+                final FormatForm formatForm = new FormatForm(1);
+                formatForm.getOk().addClickHandler(new ClickHandler() {
+                    @Override
+                    public void onClick(ClickEvent event) {
+                        controller.filterByNumber(formatForm.getFromText().getText(), formatForm.getToText().getText());
+                    }
+                });
+            }
+        });
+
+        filterByDeparture.addClickHandler(new ClickHandler() {
+            @Override
+            public void onClick(ClickEvent event) {
+                final FormatForm formatForm = new FormatForm(2);
+                formatForm.getOk().addClickHandler(new ClickHandler() {
+                    @Override
+                    public void onClick(ClickEvent event) {
+                        controller.filterByDeparture(formatForm.getFromText().getText(), formatForm.getToText().getText());
+                    }
+                });
+            }
+        });
+
+        filterByDestination.addClickHandler(new ClickHandler() {
+            @Override
+            public void onClick(ClickEvent event) {
+                final FormatForm formatForm = new FormatForm(3);
+                formatForm.getOk().addClickHandler(new ClickHandler() {
+                    @Override
+                    public void onClick(ClickEvent event) {
+                        controller.filterByDestination(formatForm.getFromText().getText(), formatForm.getToText().getText());
+                    }
+                });
+            }
+        });
+
+        filterByTime.addClickHandler(new ClickHandler() {
+            @Override
+            public void onClick(ClickEvent event) {
+                final FormatForm formatForm = new FormatForm(4);
+                formatForm.getOk().addClickHandler(new ClickHandler() {
+                    @Override
+                    public void onClick(ClickEvent event) {
+                        controller.filterByTime(formatForm.getFromText().getText(), formatForm.getToText().getText());
+                    }
+                });
             }
         });
 

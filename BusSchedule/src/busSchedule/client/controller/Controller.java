@@ -8,6 +8,7 @@ import busSchedule.client.model.DataModel;
 import busSchedule.client.view.View;
 import com.google.gwt.event.shared.EventBus;
 import com.google.gwt.event.shared.HandlerRegistration;
+import com.google.gwt.user.client.ui.TextArea;
 
 import javax.inject.Inject;
 
@@ -78,5 +79,21 @@ public class Controller {
 
     public void bind() {
         dataModel.bind();
+    }
+
+    public void filterByNumber(String fromText, String toText) {
+        dataModel.filterByNumber(fromText,toText);
+    }
+
+    public void filterByDeparture(String fromText, String toText) {
+        dataModel.filterByDeparture(fromText,toText);
+    }
+
+    public void filterByDestination(String fromText, String toText) {
+        dataModel.filterByDestination(fromText,toText);
+    }
+
+    public void filterByTime(String fromText, String toText) {
+        dataModel.filterByTime(fromText,toText);
     }
 }

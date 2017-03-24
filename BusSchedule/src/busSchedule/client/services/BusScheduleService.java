@@ -18,6 +18,10 @@ public interface BusScheduleService extends RemoteService {
     String sortByDeparture(int number);
     String sortByDestination(int number);
     String sortByTime(int number);
+    String filterByNumber(int number, String from, String to);
+    String filterByDeparture(int number, String from, String to);
+    String filterByDestination(int number, String from, String to);
+    String filterByTime(int number, String from, String to);
 
     public static class App {
         private static BusScheduleServiceAsync ourInstance = GWT.create(BusScheduleService.class);
